@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift"          ~> 4.0
+github "httpswift/swifter"          ~> 1.4.5
+github "SwiftyBeaver/SwiftyBeaver"
+github "Swinject/Swinject"

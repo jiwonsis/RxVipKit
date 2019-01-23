@@ -7,9 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290D4A9021F4BA8400F2F122 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8D21F4BA8400F2F122 /* SwiftyBeaver.framework */; };
+		290D4A9121F4BA8400F2F122 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8E21F4BA8400F2F122 /* RxCocoa.framework */; };
+		290D4A9221F4BA8400F2F122 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8F21F4BA8400F2F122 /* RxSwift.framework */; };
+		290D4A9321F4BABA00F2F122 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8E21F4BA8400F2F122 /* RxCocoa.framework */; };
+		290D4A9421F4BABA00F2F122 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8F21F4BA8400F2F122 /* RxSwift.framework */; };
+		290D4A9521F4BABA00F2F122 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A8D21F4BA8400F2F122 /* SwiftyBeaver.framework */; };
+		290D4A9A21F4BABB00F2F122 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9621F4BABB00F2F122 /* RxTest.framework */; };
+		290D4A9B21F4BABB00F2F122 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9721F4BABB00F2F122 /* RxBlocking.framework */; };
+		290D4A9C21F4BABB00F2F122 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9821F4BABB00F2F122 /* Swifter.framework */; };
+		290D4A9D21F4BABB00F2F122 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9921F4BABB00F2F122 /* RxAtomic.framework */; };
+		290D4A9F21F4C4E400F2F122 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9E21F4C4E400F2F122 /* Swinject.framework */; };
+		290D4AA021F4C69F00F2F122 /* AppLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E48FE2C88B78CD6EA9BC /* AppLoggerTests.swift */; };
+		290D4AA121F4C7F800F2F122 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290D4A9E21F4C4E400F2F122 /* Swinject.framework */; };
+		290D4AA321F4CCE200F2F122 /* LoggerInterceptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290D4AA221F4CCE200F2F122 /* LoggerInterceptorTests.swift */; };
 		2911764B21F45FB000438367 /* RxVipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2911764121F45FAF00438367 /* RxVipKit.framework */; };
-		2911765021F45FB000438367 /* RxVipKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2911764F21F45FB000438367 /* RxVipKitTests.swift */; };
 		2911765221F45FB000438367 /* RxVipKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2911764421F45FAF00438367 /* RxVipKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29367C1421F4D92400C84F0D /* AnyInterceptorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1321F4D92400C84F0D /* AnyInterceptorTest.swift */; };
+		29367C1621F4DA4500C84F0D /* InterceptorChainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1521F4DA4500C84F0D /* InterceptorChainTests.swift */; };
+		29367C1821F4DC5C00C84F0D /* LoggerDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1721F4DC5C00C84F0D /* LoggerDITests.swift */; };
+		29367C1A21F4DD2C00C84F0D /* InterceptorChainDiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1921F4DD2C00C84F0D /* InterceptorChainDiTests.swift */; };
+		29367C1D21F4DF8F00C84F0D /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1C21F4DF8F00C84F0D /* Translator.swift */; };
+		29367C1F21F4DFA000C84F0D /* NSLocalizedTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */; };
+		29367C2221F4E39800C84F0D /* NSLocalizedTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */; };
+		29367C2521F4E4AC00C84F0D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2421F4E4AC00C84F0D /* Endpoint.swift */; };
+		29367C2821F4E4C300C84F0D /* EndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2721F4E4C300C84F0D /* EndpointMock.swift */; };
+		29367C2B21F4E52000C84F0D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2A21F4E52000C84F0D /* HttpMethod.swift */; };
+		29367C2E21F4E6FB00C84F0D /* RepositoryParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2D21F4E6FB00C84F0D /* RepositoryParameter.swift */; };
+		29367C3121F4E72200C84F0D /* RepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C3021F4E72200C84F0D /* RepositoryMock.swift */; };
+		29367C3321F4E9D300C84F0D /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C3221F4E9D300C84F0D /* EndpointTests.swift */; };
+		293F637A21F897A300A8F4FF /* DeserializableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F637921F897A300A8F4FF /* DeserializableTests.swift */; };
+		293F637C21F897F000A8F4FF /* Transformer+RxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F637B21F897F000A8F4FF /* Transformer+RxTests.swift */; };
+		293F637F21F89B6600A8F4FF /* EndpointToURLRequestTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F637E21F89B6600A8F4FF /* EndpointToURLRequestTransformerTests.swift */; };
+		293F638221F89C5B00A8F4FF /* HttpStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638121F89C5B00A8F4FF /* HttpStub.swift */; };
+		293F638421F8A7A700A8F4FF /* EndpointFailMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638321F8A7A700A8F4FF /* EndpointFailMock.swift */; };
+		293F638621F8A9F300A8F4FF /* EndPointFullDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638521F8A9F300A8F4FF /* EndPointFullDataMock.swift */; };
+		293F638821F8AD0800A8F4FF /* RepositoryFullDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638721F8AD0800A8F4FF /* RepositoryFullDataMock.swift */; };
+		293F638E21F8B4CC00A8F4FF /* EndpointFailMock2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638D21F8B4CC00A8F4FF /* EndpointFailMock2.swift */; };
+		29CFFB1E21F75600007221A0 /* EventParameterKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB1D21F75600007221A0 /* EventParameterKey.swift */; };
+		29CFFB2021F75856007221A0 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB1F21F75856007221A0 /* Interactor.swift */; };
+		29CFFB2321F7588B007221A0 /* EventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB2221F7588B007221A0 /* EventRequest.swift */; };
+		29CFFB2521F758C5007221A0 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB2421F758C5007221A0 /* AppAction.swift */; };
+		29CFFB2821F75A7D007221A0 /* EventRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB2721F75A7D007221A0 /* EventRequestTests.swift */; };
+		29CFFB2B21F7662F007221A0 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB2A21F7662E007221A0 /* AppError.swift */; };
+		29CFFB2F21F766A2007221A0 /* DeserializationAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB2E21F766A2007221A0 /* DeserializationAppError.swift */; };
+		29CFFB3121F767B4007221A0 /* DeserializationAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3021F767B4007221A0 /* DeserializationAppErrorTests.swift */; };
+		29CFFB3321F76990007221A0 /* ExpectsContentAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3221F76990007221A0 /* ExpectsContentAppError.swift */; };
+		29CFFB3521F76B44007221A0 /* ExpectsContentAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3421F76B44007221A0 /* ExpectsContentAppErrorTests.swift */; };
+		29CFFB3721F76BA3007221A0 /* MalformedURLAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3621F76BA3007221A0 /* MalformedURLAppError.swift */; };
+		29CFFB3921F76BD9007221A0 /* MalformedURLAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3821F76BD9007221A0 /* MalformedURLAppErrorTests.swift */; };
+		29CFFB3B21F76C09007221A0 /* NetworkAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3A21F76C09007221A0 /* NetworkAppError.swift */; };
+		29CFFB3D21F76C56007221A0 /* NetworkAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3C21F76C56007221A0 /* NetworkAppErrorTests.swift */; };
+		29CFFB3F21F76CAD007221A0 /* ParameterTypeAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB3E21F76CAD007221A0 /* ParameterTypeAppErrorTests.swift */; };
+		29CFFB4121F76CDA007221A0 /* ParameterTypeAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4021F76CDA007221A0 /* ParameterTypeAppError.swift */; };
+		29CFFB4321F76D94007221A0 /* SerializationAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4221F76D94007221A0 /* SerializationAppError.swift */; };
+		29CFFB4521F76D9A007221A0 /* SerializationAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4421F76D9A007221A0 /* SerializationAppErrorTests.swift */; };
+		29CFFB4721F76E05007221A0 /* NoRequestParameterAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4621F76E05007221A0 /* NoRequestParameterAppError.swift */; };
+		29CFFB4921F76E25007221A0 /* NoRequestParameterAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4821F76E25007221A0 /* NoRequestParameterAppErrorTests.swift */; };
+		29CFFB4B21F76E65007221A0 /* DefaultAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4A21F76E65007221A0 /* DefaultAppError.swift */; };
+		29CFFB4D21F76EB9007221A0 /* DefaultAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4C21F76EB9007221A0 /* DefaultAppErrorTests.swift */; };
+		29CFFB4F21F76F28007221A0 /* InvalidFormAppErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB4E21F76F28007221A0 /* InvalidFormAppErrorTests.swift */; };
+		29CFFB5121F76F2F007221A0 /* InvalidFormAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5021F76F2F007221A0 /* InvalidFormAppError.swift */; };
+		29CFFB5521F76FEE007221A0 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5421F76FEE007221A0 /* Transformer.swift */; };
+		29CFFB5721F7703A007221A0 /* Transformer+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5621F7703A007221A0 /* Transformer+Rx.swift */; };
+		29CFFB5921F77112007221A0 /* AnyTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5821F77112007221A0 /* AnyTransformer.swift */; };
+		29CFFB5B21F771BE007221A0 /* AnyTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5A21F771BE007221A0 /* AnyTransformerTests.swift */; };
+		29CFFB5E21F772BF007221A0 /* DictionaryToUserTransformerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB5D21F772BF007221A0 /* DictionaryToUserTransformerMock.swift */; };
+		29CFFB6121F7763E007221A0 /* EndpointToURLRequestTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB6021F7763E007221A0 /* EndpointToURLRequestTransformer.swift */; };
+		29CFFB6421F776F8007221A0 /* Deserializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB6321F776F8007221A0 /* Deserializable.swift */; };
+		29CFFB6721F77835007221A0 /* TestEntityMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CFFB6621F77835007221A0 /* TestEntityMock.swift */; };
+		F426E0F158CEC17C98CF0B58 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E3E3E8B27D14C4614EC7 /* AppLogger.swift */; };
+		F426E26F5FC2A1FA16BE8CC7 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E42ACFB316866BE89AA0 /* Interceptor.swift */; };
+		F426E4BB56D222A4A9B4E9A3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E4D8511F106F6B96C329 /* Logger.swift */; };
+		F426E76AD61D403A97B989FD /* AnyInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EB980EB1E1C04FD2CE64 /* AnyInterceptor.swift */; };
+		F426E8309DBD7E7D00735D66 /* LoggerInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E56B8EAA8400032AB554 /* LoggerInterceptor.swift */; };
+		F426E924EDDD5DFC003BF915 /* LoggerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426E8FBCFEF20018642D0CC /* LoggerLevel.swift */; };
+		F426EEF7E105D2A47164B21F /* InterceptorChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F426EF1979244F1B75A1A20D /* InterceptorChain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +96,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290D4A8D21F4BA8400F2F122 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = SOURCE_ROOT; };
+		290D4A8E21F4BA8400F2F122 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		290D4A8F21F4BA8400F2F122 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		290D4A9621F4BABB00F2F122 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
+		290D4A9721F4BABB00F2F122 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
+		290D4A9821F4BABB00F2F122 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/iOS/Swifter.framework; sourceTree = SOURCE_ROOT; };
+		290D4A9921F4BABB00F2F122 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = SOURCE_ROOT; };
+		290D4A9E21F4C4E400F2F122 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = SOURCE_ROOT; };
+		290D4AA221F4CCE200F2F122 /* LoggerInterceptorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerInterceptorTests.swift; sourceTree = "<group>"; };
 		2911764121F45FAF00438367 /* RxVipKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxVipKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2911764421F45FAF00438367 /* RxVipKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxVipKit.h; sourceTree = "<group>"; };
 		2911764521F45FAF00438367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2911764A21F45FB000438367 /* RxVipKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxVipKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2911764F21F45FB000438367 /* RxVipKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVipKitTests.swift; sourceTree = "<group>"; };
 		2911765121F45FB000438367 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29367C1321F4D92400C84F0D /* AnyInterceptorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyInterceptorTest.swift; sourceTree = "<group>"; };
+		29367C1521F4DA4500C84F0D /* InterceptorChainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterceptorChainTests.swift; sourceTree = "<group>"; };
+		29367C1721F4DC5C00C84F0D /* LoggerDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDITests.swift; sourceTree = "<group>"; };
+		29367C1921F4DD2C00C84F0D /* InterceptorChainDiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterceptorChainDiTests.swift; sourceTree = "<group>"; };
+		29367C1C21F4DF8F00C84F0D /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedTranslator.swift; sourceTree = "<group>"; };
+		29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedTranslatorTests.swift; sourceTree = "<group>"; };
+		29367C2421F4E4AC00C84F0D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		29367C2721F4E4C300C84F0D /* EndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointMock.swift; sourceTree = "<group>"; };
+		29367C2A21F4E52000C84F0D /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		29367C2D21F4E6FB00C84F0D /* RepositoryParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryParameter.swift; sourceTree = "<group>"; };
+		29367C3021F4E72200C84F0D /* RepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryMock.swift; sourceTree = "<group>"; };
+		29367C3221F4E9D300C84F0D /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		293F637921F897A300A8F4FF /* DeserializableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializableTests.swift; sourceTree = "<group>"; };
+		293F637B21F897F000A8F4FF /* Transformer+RxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transformer+RxTests.swift"; sourceTree = "<group>"; };
+		293F637E21F89B6600A8F4FF /* EndpointToURLRequestTransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointToURLRequestTransformerTests.swift; sourceTree = "<group>"; };
+		293F638121F89C5B00A8F4FF /* HttpStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStub.swift; sourceTree = "<group>"; };
+		293F638321F8A7A700A8F4FF /* EndpointFailMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointFailMock.swift; sourceTree = "<group>"; };
+		293F638521F8A9F300A8F4FF /* EndPointFullDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFullDataMock.swift; sourceTree = "<group>"; };
+		293F638721F8AD0800A8F4FF /* RepositoryFullDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFullDataMock.swift; sourceTree = "<group>"; };
+		293F638D21F8B4CC00A8F4FF /* EndpointFailMock2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointFailMock2.swift; sourceTree = "<group>"; };
+		29CFFB1D21F75600007221A0 /* EventParameterKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParameterKey.swift; sourceTree = "<group>"; };
+		29CFFB1F21F75856007221A0 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		29CFFB2221F7588B007221A0 /* EventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequest.swift; sourceTree = "<group>"; };
+		29CFFB2421F758C5007221A0 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		29CFFB2721F75A7D007221A0 /* EventRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRequestTests.swift; sourceTree = "<group>"; };
+		29CFFB2A21F7662E007221A0 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		29CFFB2E21F766A2007221A0 /* DeserializationAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializationAppError.swift; sourceTree = "<group>"; };
+		29CFFB3021F767B4007221A0 /* DeserializationAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializationAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB3221F76990007221A0 /* ExpectsContentAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectsContentAppError.swift; sourceTree = "<group>"; };
+		29CFFB3421F76B44007221A0 /* ExpectsContentAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectsContentAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB3621F76BA3007221A0 /* MalformedURLAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalformedURLAppError.swift; sourceTree = "<group>"; };
+		29CFFB3821F76BD9007221A0 /* MalformedURLAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MalformedURLAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB3A21F76C09007221A0 /* NetworkAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAppError.swift; sourceTree = "<group>"; };
+		29CFFB3C21F76C56007221A0 /* NetworkAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB3E21F76CAD007221A0 /* ParameterTypeAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterTypeAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB4021F76CDA007221A0 /* ParameterTypeAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterTypeAppError.swift; sourceTree = "<group>"; };
+		29CFFB4221F76D94007221A0 /* SerializationAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationAppError.swift; sourceTree = "<group>"; };
+		29CFFB4421F76D9A007221A0 /* SerializationAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB4621F76E05007221A0 /* NoRequestParameterAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRequestParameterAppError.swift; sourceTree = "<group>"; };
+		29CFFB4821F76E25007221A0 /* NoRequestParameterAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRequestParameterAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB4A21F76E65007221A0 /* DefaultAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppError.swift; sourceTree = "<group>"; };
+		29CFFB4C21F76EB9007221A0 /* DefaultAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB4E21F76F28007221A0 /* InvalidFormAppErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidFormAppErrorTests.swift; sourceTree = "<group>"; };
+		29CFFB5021F76F2F007221A0 /* InvalidFormAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidFormAppError.swift; sourceTree = "<group>"; };
+		29CFFB5421F76FEE007221A0 /* Transformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformer.swift; sourceTree = "<group>"; };
+		29CFFB5621F7703A007221A0 /* Transformer+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transformer+Rx.swift"; sourceTree = "<group>"; };
+		29CFFB5821F77112007221A0 /* AnyTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransformer.swift; sourceTree = "<group>"; };
+		29CFFB5A21F771BE007221A0 /* AnyTransformerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransformerTests.swift; sourceTree = "<group>"; };
+		29CFFB5D21F772BF007221A0 /* DictionaryToUserTransformerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryToUserTransformerMock.swift; sourceTree = "<group>"; };
+		29CFFB6021F7763E007221A0 /* EndpointToURLRequestTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointToURLRequestTransformer.swift; sourceTree = "<group>"; };
+		29CFFB6321F776F8007221A0 /* Deserializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserializable.swift; sourceTree = "<group>"; };
+		29CFFB6621F77835007221A0 /* TestEntityMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEntityMock.swift; sourceTree = "<group>"; };
+		F426E3E3E8B27D14C4614EC7 /* AppLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		F426E42ACFB316866BE89AA0 /* Interceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		F426E48FE2C88B78CD6EA9BC /* AppLoggerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLoggerTests.swift; sourceTree = "<group>"; };
+		F426E4D8511F106F6B96C329 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F426E56B8EAA8400032AB554 /* LoggerInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerInterceptor.swift; sourceTree = "<group>"; };
+		F426E8FBCFEF20018642D0CC /* LoggerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerLevel.swift; sourceTree = "<group>"; };
+		F426EB980EB1E1C04FD2CE64 /* AnyInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyInterceptor.swift; sourceTree = "<group>"; };
+		F426EF1979244F1B75A1A20D /* InterceptorChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterceptorChain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +178,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D4A9F21F4C4E400F2F122 /* Swinject.framework in Frameworks */,
+				290D4A9021F4BA8400F2F122 /* SwiftyBeaver.framework in Frameworks */,
+				290D4A9121F4BA8400F2F122 /* RxCocoa.framework in Frameworks */,
+				290D4A9221F4BA8400F2F122 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +189,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290D4AA121F4C7F800F2F122 /* Swinject.framework in Frameworks */,
+				290D4A9A21F4BABB00F2F122 /* RxTest.framework in Frameworks */,
+				290D4A9B21F4BABB00F2F122 /* RxBlocking.framework in Frameworks */,
+				290D4A9C21F4BABB00F2F122 /* Swifter.framework in Frameworks */,
+				290D4A9D21F4BABB00F2F122 /* RxAtomic.framework in Frameworks */,
+				290D4A9321F4BABA00F2F122 /* RxCocoa.framework in Frameworks */,
+				290D4A9421F4BABA00F2F122 /* RxSwift.framework in Frameworks */,
+				290D4A9521F4BABA00F2F122 /* SwiftyBeaver.framework in Frameworks */,
 				2911764B21F45FB000438367 /* RxVipKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +204,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		290D4A8C21F4BA3B00F2F122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290D4A9E21F4C4E400F2F122 /* Swinject.framework */,
+				290D4A9921F4BABB00F2F122 /* RxAtomic.framework */,
+				290D4A9721F4BABB00F2F122 /* RxBlocking.framework */,
+				290D4A9621F4BABB00F2F122 /* RxTest.framework */,
+				290D4A9821F4BABB00F2F122 /* Swifter.framework */,
+				290D4A8E21F4BA8400F2F122 /* RxCocoa.framework */,
+				290D4A8F21F4BA8400F2F122 /* RxSwift.framework */,
+				290D4A8D21F4BA8400F2F122 /* SwiftyBeaver.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		2911763721F45FAF00438367 = {
 			isa = PBXGroup;
 			children = (
-				2911764321F45FAF00438367 /* RxVipKit */,
-				2911764E21F45FB000438367 /* RxVipKitTests */,
 				2911764221F45FAF00438367 /* Products */,
+				2911764321F45FAF00438367 /* RxVipKit */,
+				290D4A8C21F4BA3B00F2F122 /* Frameworks */,
+				2911764E21F45FB000438367 /* RxVipKitTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +243,7 @@
 			children = (
 				2911764421F45FAF00438367 /* RxVipKit.h */,
 				2911764521F45FAF00438367 /* Info.plist */,
+				2911765B21F45FC300438367 /* Foundation */,
 			);
 			path = RxVipKit;
 			sourceTree = "<group>";
@@ -80,10 +251,310 @@
 		2911764E21F45FB000438367 /* RxVipKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				2911764F21F45FB000438367 /* RxVipKitTests.swift */,
 				2911765121F45FB000438367 /* Info.plist */,
+				F426ECBDA0278377F0755F99 /* Foundation */,
 			);
 			path = RxVipKitTests;
+			sourceTree = "<group>";
+		};
+		2911765B21F45FC300438367 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB6221F776E0007221A0 /* Parser */,
+				29CFFB2921F76610007221A0 /* AppError */,
+				29CFFB1C21F755E7007221A0 /* Core */,
+				29367C2321F4E49E00C84F0D /* Endpoint */,
+				F426EEDFC69026CA4FB62C99 /* Interceptor */,
+				F426E1BD41DD2AE58350632B /* Logger */,
+				29367C2921F4E4F600C84F0D /* Network */,
+				29367C2C21F4E6EB00C84F0D /* Repository */,
+				29CFFB5221F76FA5007221A0 /* Transformer */,
+				29367C1B21F4DF7E00C84F0D /* Translator */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		29367C1221F4D90C00C84F0D /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				29367C1321F4D92400C84F0D /* AnyInterceptorTest.swift */,
+				29367C1521F4DA4500C84F0D /* InterceptorChainTests.swift */,
+				29367C1921F4DD2C00C84F0D /* InterceptorChainDiTests.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		29367C1B21F4DF7E00C84F0D /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				29367C1C21F4DF8F00C84F0D /* Translator.swift */,
+				29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		29367C2021F4E38600C84F0D /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
+		29367C2321F4E49E00C84F0D /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				29367C2421F4E4AC00C84F0D /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		29367C2621F4E4BA00C84F0D /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				293F638921F8AD3E00A8F4FF /* Mock */,
+				29367C3221F4E9D300C84F0D /* EndpointTests.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		29367C2921F4E4F600C84F0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29367C2A21F4E52000C84F0D /* HttpMethod.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		29367C2C21F4E6EB00C84F0D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				29367C2D21F4E6FB00C84F0D /* RepositoryParameter.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		29367C2F21F4E71900C84F0D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				293F638A21F8AD5000A8F4FF /* Mock */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		293F637821F8979500A8F4FF /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				293F637921F897A300A8F4FF /* DeserializableTests.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		293F637D21F89B5A00A8F4FF /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				293F638C21F8AD7700A8F4FF /* Mock */,
+				293F637E21F89B6600A8F4FF /* EndpointToURLRequestTransformerTests.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		293F638021F89C4500A8F4FF /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				293F638121F89C5B00A8F4FF /* HttpStub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		293F638921F8AD3E00A8F4FF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29367C2721F4E4C300C84F0D /* EndpointMock.swift */,
+				293F638521F8A9F300A8F4FF /* EndPointFullDataMock.swift */,
+				293F638321F8A7A700A8F4FF /* EndpointFailMock.swift */,
+				293F638D21F8B4CC00A8F4FF /* EndpointFailMock2.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		293F638A21F8AD5000A8F4FF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29367C3021F4E72200C84F0D /* RepositoryMock.swift */,
+				293F638721F8AD0800A8F4FF /* RepositoryFullDataMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		293F638C21F8AD7700A8F4FF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB5D21F772BF007221A0 /* DictionaryToUserTransformerMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		29CFFB1C21F755E7007221A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB2121F75881007221A0 /* EventRequest */,
+				29CFFB1D21F75600007221A0 /* EventParameterKey.swift */,
+				29CFFB1F21F75856007221A0 /* Interactor.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		29CFFB2121F75881007221A0 /* EventRequest */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB2221F7588B007221A0 /* EventRequest.swift */,
+				29CFFB2421F758C5007221A0 /* AppAction.swift */,
+			);
+			path = EventRequest;
+			sourceTree = "<group>";
+		};
+		29CFFB2621F75A6C007221A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB2721F75A7D007221A0 /* EventRequestTests.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		29CFFB2921F76610007221A0 /* AppError */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB2A21F7662E007221A0 /* AppError.swift */,
+				29CFFB2D21F7666B007221A0 /* Implementation */,
+			);
+			path = AppError;
+			sourceTree = "<group>";
+		};
+		29CFFB2C21F76657007221A0 /* AppError */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB3021F767B4007221A0 /* DeserializationAppErrorTests.swift */,
+				29CFFB3421F76B44007221A0 /* ExpectsContentAppErrorTests.swift */,
+				29CFFB3821F76BD9007221A0 /* MalformedURLAppErrorTests.swift */,
+				29CFFB3C21F76C56007221A0 /* NetworkAppErrorTests.swift */,
+				29CFFB3E21F76CAD007221A0 /* ParameterTypeAppErrorTests.swift */,
+				29CFFB4421F76D9A007221A0 /* SerializationAppErrorTests.swift */,
+				29CFFB4821F76E25007221A0 /* NoRequestParameterAppErrorTests.swift */,
+				29CFFB4C21F76EB9007221A0 /* DefaultAppErrorTests.swift */,
+				29CFFB4E21F76F28007221A0 /* InvalidFormAppErrorTests.swift */,
+			);
+			path = AppError;
+			sourceTree = "<group>";
+		};
+		29CFFB2D21F7666B007221A0 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB2E21F766A2007221A0 /* DeserializationAppError.swift */,
+				29CFFB3221F76990007221A0 /* ExpectsContentAppError.swift */,
+				29CFFB3621F76BA3007221A0 /* MalformedURLAppError.swift */,
+				29CFFB3A21F76C09007221A0 /* NetworkAppError.swift */,
+				29CFFB4021F76CDA007221A0 /* ParameterTypeAppError.swift */,
+				29CFFB4221F76D94007221A0 /* SerializationAppError.swift */,
+				29CFFB4621F76E05007221A0 /* NoRequestParameterAppError.swift */,
+				29CFFB4A21F76E65007221A0 /* DefaultAppError.swift */,
+				29CFFB5021F76F2F007221A0 /* InvalidFormAppError.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		29CFFB5221F76FA5007221A0 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB5F21F7761C007221A0 /* Implementation */,
+				29CFFB5421F76FEE007221A0 /* Transformer.swift */,
+				29CFFB5821F77112007221A0 /* AnyTransformer.swift */,
+				29CFFB5621F7703A007221A0 /* Transformer+Rx.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		29CFFB5321F76FB3007221A0 /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				293F637D21F89B5A00A8F4FF /* Implementation */,
+				29CFFB5A21F771BE007221A0 /* AnyTransformerTests.swift */,
+				293F637B21F897F000A8F4FF /* Transformer+RxTests.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		29CFFB5F21F7761C007221A0 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB6021F7763E007221A0 /* EndpointToURLRequestTransformer.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		29CFFB6221F776E0007221A0 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB6321F776F8007221A0 /* Deserializable.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		29CFFB6521F77822007221A0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				29CFFB6621F77835007221A0 /* TestEntityMock.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F426E1BD41DD2AE58350632B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				F426E4D8511F106F6B96C329 /* Logger.swift */,
+				F426E8FBCFEF20018642D0CC /* LoggerLevel.swift */,
+				F426E56B8EAA8400032AB554 /* LoggerInterceptor.swift */,
+				F426E3E3E8B27D14C4614EC7 /* AppLogger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		F426EA8D97CE7B1E96BA4D17 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				F426E48FE2C88B78CD6EA9BC /* AppLoggerTests.swift */,
+				290D4AA221F4CCE200F2F122 /* LoggerInterceptorTests.swift */,
+				29367C1721F4DC5C00C84F0D /* LoggerDITests.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		F426ECBDA0278377F0755F99 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				293F638021F89C4500A8F4FF /* Stub */,
+				293F637821F8979500A8F4FF /* Parser */,
+				29CFFB6521F77822007221A0 /* Entities */,
+				29CFFB2C21F76657007221A0 /* AppError */,
+				29CFFB2621F75A6C007221A0 /* Core */,
+				29367C2621F4E4BA00C84F0D /* Endpoint */,
+				29367C1221F4D90C00C84F0D /* Interceptor */,
+				F426EA8D97CE7B1E96BA4D17 /* Logger */,
+				29367C2F21F4E71900C84F0D /* Repository */,
+				29CFFB5321F76FB3007221A0 /* Transformer */,
+				29367C2021F4E38600C84F0D /* Translator */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F426EEDFC69026CA4FB62C99 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				F426E42ACFB316866BE89AA0 /* Interceptor.swift */,
+				F426EB980EB1E1C04FD2CE64 /* AnyInterceptor.swift */,
+				F426EF1979244F1B75A1A20D /* InterceptorChain.swift */,
+			);
+			path = Interceptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +575,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2911765521F45FB000438367 /* Build configuration list for PBXNativeTarget "RxVipKit" */;
 			buildPhases = (
+				29A876C121F4B8D600971D76 /* Run Script */,
 				2911763C21F45FAF00438367 /* Headers */,
 				2911763D21F45FAF00438367 /* Sources */,
 				2911763E21F45FAF00438367 /* Frameworks */,
@@ -122,6 +594,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2911765821F45FB000438367 /* Build configuration list for PBXNativeTarget "RxVipKitTests" */;
 			buildPhases = (
+				29A876C221F4B8E900971D76 /* Run Script */,
 				2911764621F45FB000438367 /* Sources */,
 				2911764721F45FB000438367 /* Frameworks */,
 				2911764821F45FB000438367 /* Resources */,
@@ -189,11 +662,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29A876C121F4B8D600971D76 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxAtomic.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyBeaver.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		29A876C221F4B8E900971D76 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swifter.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyBeaver.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nswiftlint autocorrect\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2911763D21F45FAF00438367 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F426E4BB56D222A4A9B4E9A3 /* Logger.swift in Sources */,
+				29CFFB1E21F75600007221A0 /* EventParameterKey.swift in Sources */,
+				29367C1F21F4DFA000C84F0D /* NSLocalizedTranslator.swift in Sources */,
+				F426E924EDDD5DFC003BF915 /* LoggerLevel.swift in Sources */,
+				29CFFB2B21F7662F007221A0 /* AppError.swift in Sources */,
+				29CFFB3B21F76C09007221A0 /* NetworkAppError.swift in Sources */,
+				F426E8309DBD7E7D00735D66 /* LoggerInterceptor.swift in Sources */,
+				29CFFB6421F776F8007221A0 /* Deserializable.swift in Sources */,
+				29367C2B21F4E52000C84F0D /* HttpMethod.swift in Sources */,
+				29367C2521F4E4AC00C84F0D /* Endpoint.swift in Sources */,
+				F426E0F158CEC17C98CF0B58 /* AppLogger.swift in Sources */,
+				29CFFB5521F76FEE007221A0 /* Transformer.swift in Sources */,
+				29CFFB4721F76E05007221A0 /* NoRequestParameterAppError.swift in Sources */,
+				F426E26F5FC2A1FA16BE8CC7 /* Interceptor.swift in Sources */,
+				29CFFB5121F76F2F007221A0 /* InvalidFormAppError.swift in Sources */,
+				29CFFB2521F758C5007221A0 /* AppAction.swift in Sources */,
+				29CFFB5921F77112007221A0 /* AnyTransformer.swift in Sources */,
+				29CFFB5721F7703A007221A0 /* Transformer+Rx.swift in Sources */,
+				29367C1D21F4DF8F00C84F0D /* Translator.swift in Sources */,
+				29CFFB2F21F766A2007221A0 /* DeserializationAppError.swift in Sources */,
+				29CFFB3721F76BA3007221A0 /* MalformedURLAppError.swift in Sources */,
+				29CFFB3321F76990007221A0 /* ExpectsContentAppError.swift in Sources */,
+				29367C2E21F4E6FB00C84F0D /* RepositoryParameter.swift in Sources */,
+				29CFFB4321F76D94007221A0 /* SerializationAppError.swift in Sources */,
+				29CFFB6121F7763E007221A0 /* EndpointToURLRequestTransformer.swift in Sources */,
+				F426E76AD61D403A97B989FD /* AnyInterceptor.swift in Sources */,
+				29CFFB2021F75856007221A0 /* Interactor.swift in Sources */,
+				29CFFB2321F7588B007221A0 /* EventRequest.swift in Sources */,
+				29CFFB4B21F76E65007221A0 /* DefaultAppError.swift in Sources */,
+				29CFFB4121F76CDA007221A0 /* ParameterTypeAppError.swift in Sources */,
+				F426EEF7E105D2A47164B21F /* InterceptorChain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +762,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2911765021F45FB000438367 /* RxVipKitTests.swift in Sources */,
+				29CFFB4521F76D9A007221A0 /* SerializationAppErrorTests.swift in Sources */,
+				29CFFB6721F77835007221A0 /* TestEntityMock.swift in Sources */,
+				29367C2821F4E4C300C84F0D /* EndpointMock.swift in Sources */,
+				29367C1A21F4DD2C00C84F0D /* InterceptorChainDiTests.swift in Sources */,
+				29CFFB3121F767B4007221A0 /* DeserializationAppErrorTests.swift in Sources */,
+				290D4AA021F4C69F00F2F122 /* AppLoggerTests.swift in Sources */,
+				293F638821F8AD0800A8F4FF /* RepositoryFullDataMock.swift in Sources */,
+				290D4AA321F4CCE200F2F122 /* LoggerInterceptorTests.swift in Sources */,
+				293F637A21F897A300A8F4FF /* DeserializableTests.swift in Sources */,
+				293F637C21F897F000A8F4FF /* Transformer+RxTests.swift in Sources */,
+				293F637F21F89B6600A8F4FF /* EndpointToURLRequestTransformerTests.swift in Sources */,
+				29CFFB3D21F76C56007221A0 /* NetworkAppErrorTests.swift in Sources */,
+				293F638221F89C5B00A8F4FF /* HttpStub.swift in Sources */,
+				293F638421F8A7A700A8F4FF /* EndpointFailMock.swift in Sources */,
+				29CFFB4D21F76EB9007221A0 /* DefaultAppErrorTests.swift in Sources */,
+				29367C1821F4DC5C00C84F0D /* LoggerDITests.swift in Sources */,
+				29CFFB2821F75A7D007221A0 /* EventRequestTests.swift in Sources */,
+				29CFFB4F21F76F28007221A0 /* InvalidFormAppErrorTests.swift in Sources */,
+				29CFFB5B21F771BE007221A0 /* AnyTransformerTests.swift in Sources */,
+				29CFFB4921F76E25007221A0 /* NoRequestParameterAppErrorTests.swift in Sources */,
+				29CFFB5E21F772BF007221A0 /* DictionaryToUserTransformerMock.swift in Sources */,
+				29CFFB3F21F76CAD007221A0 /* ParameterTypeAppErrorTests.swift in Sources */,
+				293F638621F8A9F300A8F4FF /* EndPointFullDataMock.swift in Sources */,
+				29CFFB3921F76BD9007221A0 /* MalformedURLAppErrorTests.swift in Sources */,
+				29367C2221F4E39800C84F0D /* NSLocalizedTranslatorTests.swift in Sources */,
+				29367C3121F4E72200C84F0D /* RepositoryMock.swift in Sources */,
+				29367C1421F4D92400C84F0D /* AnyInterceptorTest.swift in Sources */,
+				29367C3321F4E9D300C84F0D /* EndpointTests.swift in Sources */,
+				29367C1621F4DA4500C84F0D /* InterceptorChainTests.swift in Sources */,
+				293F638E21F8B4CC00A8F4FF /* EndpointFailMock2.swift in Sources */,
+				29CFFB3521F76B44007221A0 /* ExpectsContentAppErrorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +938,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxVipKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,6 +966,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxVipKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -390,6 +989,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxVipKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -407,6 +1010,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxVipKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
