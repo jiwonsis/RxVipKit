@@ -12,7 +12,17 @@ public struct AppLogger {
 
     public init() {
         logger = SwiftyBeaver.self
+        setConsole()
+    }
 
+    public init(appID: String, appSecret: String, encryptionKey: String) {
+        let platform = SBPlatformDestination(appID: appID, appSecret: appSecret, encryptionKey: encryptionKey)
+        logger = SwiftyBeaver.self
+        setConsole()
+        logger.addDestination(platform)
+    }
+
+    private func setConsole() {
         let console = ConsoleDestination()
         console.asynchronously = false
         console.format = "$DHH:mm:ss.SSS$d $C$L$c - $M"
