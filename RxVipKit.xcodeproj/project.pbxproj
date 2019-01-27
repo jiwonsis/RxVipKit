@@ -44,6 +44,7 @@
 		293F638621F8A9F300A8F4FF /* EndPointFullDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638521F8A9F300A8F4FF /* EndPointFullDataMock.swift */; };
 		293F638821F8AD0800A8F4FF /* RespositoryParameterFullDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638721F8AD0800A8F4FF /* RespositoryParameterFullDataMock.swift */; };
 		293F638E21F8B4CC00A8F4FF /* EndpointFailMock2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F638D21F8B4CC00A8F4FF /* EndpointFailMock2.swift */; };
+		2958A02821FDE09B000ADF1E /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2958A02721FDE09B000ADF1E /* AppContainer.swift */; };
 		2971FC6D21FAEFED00988B10 /* AppHTTPClientTyoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC6C21FAEFED00988B10 /* AppHTTPClientTyoeTests.swift */; };
 		2971FC6F21FAFCC300988B10 /* RepositoryTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC6E21FAFCC300988B10 /* RepositoryTestMock.swift */; };
 		2971FC7121FAFD4E00988B10 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7021FAFD4E00988B10 /* Repository.swift */; };
@@ -184,6 +185,7 @@
 		293F638521F8A9F300A8F4FF /* EndPointFullDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointFullDataMock.swift; sourceTree = "<group>"; };
 		293F638721F8AD0800A8F4FF /* RespositoryParameterFullDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryParameterFullDataMock.swift; sourceTree = "<group>"; };
 		293F638D21F8B4CC00A8F4FF /* EndpointFailMock2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointFailMock2.swift; sourceTree = "<group>"; };
+		2958A02721FDE09B000ADF1E /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
 		2971FC6C21FAEFED00988B10 /* AppHTTPClientTyoeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHTTPClientTyoeTests.swift; sourceTree = "<group>"; };
 		2971FC6E21FAFCC300988B10 /* RepositoryTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTestMock.swift; sourceTree = "<group>"; };
 		2971FC7021FAFD4E00988B10 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 		2911765B21F45FC300438367 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				2958A02621FDE089000ADF1E /* DependencyInjection */,
 				29ED296D21FDC54D00732841 /* Utils */,
 				29CFFB6221F776E0007221A0 /* Parser */,
 				29CFFB2921F76610007221A0 /* AppError */,
@@ -512,6 +515,14 @@
 				29CFFB5D21F772BF007221A0 /* DictionaryToUserTransformerMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		2958A02621FDE089000ADF1E /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				2958A02721FDE09B000ADF1E /* AppContainer.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		2971FC6B21FAEF4E00988B10 /* HTTPClientType */ = {
@@ -1188,6 +1199,7 @@
 				29EAB0B921FCAE1E00C9481E /* AnyViewType.swift in Sources */,
 				298B680121F9E4C8003E0CBB /* HTTPErrorHandler.swift in Sources */,
 				F426E76AD61D403A97B989FD /* AnyInterceptor.swift in Sources */,
+				2958A02821FDE09B000ADF1E /* AppContainer.swift in Sources */,
 				298B683821FA1F32003E0CBB /* AppHTTPClientType.swift in Sources */,
 				29CFFB2021F75856007221A0 /* Interactor.swift in Sources */,
 				298B680821F9E686003E0CBB /* AppResponse.swift in Sources */,
