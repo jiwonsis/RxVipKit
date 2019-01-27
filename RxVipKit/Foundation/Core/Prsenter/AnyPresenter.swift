@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-final class AnyPresenter<ViewModel>: Presenter {
+public final class AnyPresenter<ViewModel>: Presenter {
     private let _handle: (EventResponse) -> ViewModel
 
     // MARK: Initializer
@@ -17,7 +17,7 @@ final class AnyPresenter<ViewModel>: Presenter {
 
     // MARK: Presenter
 
-    func handle(response: EventResponse) -> ViewModel {
+    public func handle(response: EventResponse) -> ViewModel {
         return _handle(response)
     }
 }

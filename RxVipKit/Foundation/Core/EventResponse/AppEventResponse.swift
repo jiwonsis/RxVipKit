@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct AppEventResponse {
+public struct AppEventResponse {
     private let _code: EventResponseCode
     private let _error: Error?
     private let _data: [String: Any]?
@@ -23,19 +23,24 @@ struct AppEventResponse {
 // MARK: EventResponse
 
 extension AppEventResponse: EventResponse {
-    var succeed: Bool {
+
+    public func data<T>(named: String) -> T? {
+        return self.data?[named] as? T
+    }
+
+    public var succeed: Bool {
         return nil == error
     }
 
-    var error: Error? {
+    public var error: Error? {
         return _error
     }
 
-    var data: [String: Any]? {
+    public var data: [String: Any]? {
         return _data
     }
 
-    var code: EventResponseCode {
+    public var code: EventResponseCode {
         return _code
     }
 }

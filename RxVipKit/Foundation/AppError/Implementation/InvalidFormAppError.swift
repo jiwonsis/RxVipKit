@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct InvalidFormAppError {
+public struct InvalidFormAppError {
 
     private enum Constant {
         static let translationKey = "error.global.form"

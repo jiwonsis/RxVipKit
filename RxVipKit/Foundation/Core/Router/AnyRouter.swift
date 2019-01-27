@@ -8,7 +8,7 @@
 
 import RxSwift
 
-final class AnyRouter<Object>: Router {
+public final class AnyRouter<Object>: Router {
     private let _callback: () -> Observable<Object>
     private let _route: (UIViewController?, EventRequest) -> Observable<EventResponse>
 
@@ -23,11 +23,11 @@ final class AnyRouter<Object>: Router {
 
     // MARK: Router
 
-    var callback: Observable<Object> {
+    public var callback: Observable<Object> {
         return _callback()
     }
 
-    func route(from root: UIViewController?, request: EventRequest) -> Observable<EventResponse> {
+    public func route(from root: UIViewController?, request: EventRequest) -> Observable<EventResponse> {
         return _route(root, request)
     }
 }

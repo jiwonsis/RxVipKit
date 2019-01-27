@@ -10,7 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class URLSessionNetworkAdapter {
+public final class URLSessionNetworkAdapter {
     private let _networkActivity: NetworkActivity
     private let _session: URLSession
 
@@ -26,7 +26,7 @@ final class URLSessionNetworkAdapter {
 
 extension URLSessionNetworkAdapter: NetworkAdapter {
 
-    func rx_send(request: URLRequest) -> Observable<Response> {
+    public func rx_send(request: URLRequest) -> Observable<Response> {
         _networkActivity.show()
 
         return Observable.create { [weak self] observer in

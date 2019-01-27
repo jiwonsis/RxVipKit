@@ -9,7 +9,7 @@
 import RxSwift
 import RxCocoa
 
-final class AnyViewType<ViewModel>: ViewType {
+public final class AnyViewType<ViewModel>: ViewType {
     private let _view: () -> UIView
     private let _request: () -> Observable<EventRequest>
     private let _update: (Driver<ViewModel>) -> Void
@@ -27,15 +27,15 @@ final class AnyViewType<ViewModel>: ViewType {
 
     // MARK: ViewType
 
-    var view: UIView {
+    public var view: UIView {
         return _view()
     }
 
-    func request() -> Observable<EventRequest> {
+    public func request() -> Observable<EventRequest> {
         return _request()
     }
 
-    func update(with stateProvider: Driver<ViewModel>) {
+    public func update(with stateProvider: Driver<ViewModel>) {
         return _update(stateProvider)
     }
 }

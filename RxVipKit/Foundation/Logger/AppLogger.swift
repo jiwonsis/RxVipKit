@@ -5,7 +5,7 @@
 
 import SwiftyBeaver
 
-struct AppLogger {
+public struct AppLogger {
     private let logger: SwiftyBeaver.Type
 
     // MARK: Initializer
@@ -22,7 +22,7 @@ struct AppLogger {
 
 // MARK: Logger
 extension AppLogger: Logger {
-    func log(level: LoggerLevel, message: Any) {
+    public func log(level: LoggerLevel, message: Any) {
         switch level {
         case .debug:
             logger.debug(message)

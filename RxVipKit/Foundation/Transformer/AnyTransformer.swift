@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct AnyTransformer<Input, Output> {
+public struct AnyTransformer<Input, Output> {
     private let _transform: (Input) throws -> Output
 
     // MARK: Initializer
@@ -19,7 +19,7 @@ struct AnyTransformer<Input, Output> {
 // MARK: Transformer
 
 extension AnyTransformer: Transformer {
-    func transform(object: Input) throws -> Output {
+    public func transform(object: Input) throws -> Output {
         return try _transform(object)
     }
 }

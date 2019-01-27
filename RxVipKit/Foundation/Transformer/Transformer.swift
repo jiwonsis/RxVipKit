@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol Transformer {
+public protocol Transformer {
     associatedtype Input
     associatedtype Output
 

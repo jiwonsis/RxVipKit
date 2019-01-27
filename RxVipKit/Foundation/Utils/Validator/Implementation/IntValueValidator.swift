@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct IntValueValidator {
+public struct IntValueValidator {
     private enum Constant {
         static let messageKey = "error.int"
     }
@@ -15,7 +15,7 @@ struct IntValueValidator {
 // MARK: Validator
 
 extension IntValueValidator: Validator {
-    func validate(object: String) -> DefaultAppError? {
+    public func validate(object: String) -> DefaultAppError? {
         if object.count == 0 {
             return nil
         }

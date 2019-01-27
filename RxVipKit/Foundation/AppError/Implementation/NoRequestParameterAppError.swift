@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct NoRequestParameterAppError {
+public struct NoRequestParameterAppError {
 
     private enum Constant {
         static let translationKey = "error.global.default"

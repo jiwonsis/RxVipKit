@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct AnyValidator<Object, Error>: Validator {
+public struct AnyValidator<Object, Error>: Validator {
     private let _validate: (Object) -> Error?
 
     // MARK: Initializer
@@ -17,7 +17,7 @@ struct AnyValidator<Object, Error>: Validator {
 
     // MARK: Validator
 
-    func validate(object: Object) -> Error? {
+    public func validate(object: Object) -> Error? {
         return _validate(object)
     }
 }

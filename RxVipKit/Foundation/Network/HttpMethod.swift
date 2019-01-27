@@ -6,6 +6,6 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum HTTPMethod: String {
+public enum HTTPMethod: String {
     case GET, POST, PUT, PATCH, DELETE
 }

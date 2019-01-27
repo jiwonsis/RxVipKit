@@ -32,4 +32,4 @@ script:
     CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -X xcodeplist -J 'RxVipKit'
+  - bash <(curl -s https://codecov.io/bash) -t {codecov_token}

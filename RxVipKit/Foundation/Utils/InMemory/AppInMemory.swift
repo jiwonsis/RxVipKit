@@ -8,8 +8,8 @@
 
 import RxSwift
 
-final class AppInMemory<T>: InMemory {
-    private(set) var value: T
+public final class AppInMemory<T>: InMemory {
+    private(set) public var value: T
 
     // MARK: Initializer
 
@@ -19,13 +19,13 @@ final class AppInMemory<T>: InMemory {
 
     // MARK: InMemory
 
-    func update(with object: T) -> Observable<T> {
+    public func update(with object: T) -> Observable<T> {
         value = object
 
         return Observable.just(value)
     }
 
-    var rxValue: Observable<T> {
+    public var rxValue: Observable<T> {
         return Observable.just(value)
     }
 }

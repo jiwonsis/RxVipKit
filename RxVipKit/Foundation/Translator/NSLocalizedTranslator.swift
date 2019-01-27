@@ -8,8 +8,8 @@
 
 import Foundation
 
-final class NSLocalizedTranslator: Translator {
-    func translation(for key: String) -> String {
+public final class NSLocalizedTranslator: Translator {
+    public func translation(for key: String) -> String {
         return NSLocalizedString(key, comment: key)
     }
 }

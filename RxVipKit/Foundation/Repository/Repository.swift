@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol Repository {
+public protocol Repository {
     associatedtype Resource
 
     func get(with parameter: RespositoryParameter) -> Observable<Result<Resource>>

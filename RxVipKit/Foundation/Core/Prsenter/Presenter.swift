@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol Presenter {
+public protocol Presenter {
     associatedtype ViewModel
 
     func handle(response: EventResponse) -> ViewModel

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct FormError {
+public struct FormError {
     let path: String
     let message: String
 }

@@ -6,4 +6,4 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol RespositoryParameter {}
+public protocol RespositoryParameter {}

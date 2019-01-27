@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct SerializationAppError {
+public struct SerializationAppError {
     private let error: Error?
 
     private enum Constant {

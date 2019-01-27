@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum AppAction: Equatable {
+public enum AppAction: Equatable {
     case viewDidLoad
     case viewWillAppear
     case viewDidAppear
@@ -17,6 +17,6 @@ enum AppAction: Equatable {
     case navigate
 }
 
-func == (lhs: AppAction, rhs: AppAction) -> Bool {
+public func == (lhs: AppAction, rhs: AppAction) -> Bool {
     return String(describing: lhs) == String(describing: rhs)
 }

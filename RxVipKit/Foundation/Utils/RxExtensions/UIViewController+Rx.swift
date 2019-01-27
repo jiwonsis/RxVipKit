@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-extension Reactive where Base: UIViewController {
+public extension Reactive where Base: UIViewController {
     var viewWillAppear: Observable<Void> {
         return methodInvoked(#selector(base.viewWillAppear(_:))).map { _ in
             return

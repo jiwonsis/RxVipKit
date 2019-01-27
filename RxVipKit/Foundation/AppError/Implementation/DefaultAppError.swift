@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct DefaultAppError {
+public struct DefaultAppError {
     private let _messageKey: String
 
     // MARK: Initializer
