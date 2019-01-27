@@ -7,5 +7,5 @@
 //
 
 protocol Translator {
-    func translation(fpr key: String) -> String
+    func translation(for key: String) -> String
 }

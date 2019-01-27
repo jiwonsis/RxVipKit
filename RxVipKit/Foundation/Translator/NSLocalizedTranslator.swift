@@ -9,7 +9,7 @@
 import Foundation
 
 final class NSLocalizedTranslator: Translator {
-    func translation(fpr key: String) -> String {
+    func translation(for key: String) -> String {
         return NSLocalizedString(key, comment: key)
     }
 }

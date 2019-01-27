@@ -24,7 +24,7 @@ class EndpointToURLRequestTransformerTests: XCTestCase {
 
         // Given
         let expectation = XCTestExpectation(description: "event call")
-        let parameterMock = RepositoryMock(testValue: "test")
+        let parameterMock = RepositoryParameterMock(testValue: "test")
         var result: URLRequest?
         let sut = AnyTransformer(base: EndpointToURLRequestTransformer())
 
@@ -53,7 +53,7 @@ class EndpointToURLRequestTransformerTests: XCTestCase {
 
         // When
         sut
-            .rx_transform(object: EndPointFullDataMock.post(with: RepositoryFullDataMock()))
+            .rx_transform(object: EndPointFullDataMock.post(with: RespositoryParameterFullDataMock()))
             .subscribe(onNext: { request in
                 result = request
                 expectation.fulfill()

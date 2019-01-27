@@ -8,12 +8,12 @@
 
 @testable import RxVipKit
 
-enum EndpointBaseMock: Endpoint {
+enum EndpointNoContentMock: Endpoint {
 
     case get(with: RepositoryParameterMock)
     case post(with: RepositoryParameterMock)
     case put(with: RepositoryParameterMock)
-    case patch(with: RepositoryParameterMock)
+    case update(with: RepositoryParameterMock)
     case delete(with: RepositoryParameterMock)
 
     private enum Constant {
@@ -23,7 +23,7 @@ enum EndpointBaseMock: Endpoint {
         static let get = "get"
         static let post = "post"
         static let put = "put"
-        static let patch = "patch"
+        static let update = "update"
         static let delete = "delete"
 
         enum Key {
@@ -34,7 +34,7 @@ enum EndpointBaseMock: Endpoint {
 
 // MARK: Endpoint
 
-extension EndpointBaseMock {
+extension EndpointNoContentMock {
 
     var baseURL: String {
         return Constant.baseURL
@@ -42,6 +42,8 @@ extension EndpointBaseMock {
 
     var path: String {
         switch self {
+        case .update:
+            return Constant.update
         default:
             return Constant.default
         }
@@ -55,8 +57,8 @@ extension EndpointBaseMock {
             return .POST
         case .put:
             return .PUT
-        case .patch:
-            return .PATCH
+        case .update:
+            return .PUT
         case .delete:
             return .DELETE
         }

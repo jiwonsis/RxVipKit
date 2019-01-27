@@ -27,7 +27,7 @@ class DeserializableTests: XCTestCase {
                 "surname": "test surname",
                 "age": "34",
             ],
-            ]
+        ]
 
         let injectJSONData = "{\"args\":{\"name\": \"test name\", \"surname\": \"test surname\", \"age\": \"34\"}}".data(using: .utf8)!
 

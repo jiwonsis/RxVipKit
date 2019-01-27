@@ -20,7 +20,7 @@ class EndpointTests: XCTestCase {
 
     func test_initializer() {
         // Given
-        let parameterMock = RepositoryMock(testValue: "test")
+        let parameterMock = RepositoryParameterMock(testValue: "test")
 
         // When
         let sut = EndpointBaseMock.get(with: parameterMock)

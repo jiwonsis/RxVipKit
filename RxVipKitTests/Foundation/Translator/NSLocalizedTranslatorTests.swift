@@ -26,7 +26,7 @@ class NSLocalizedTranslatorTests: XCTestCase {
 
         // When
         sut = NSLocalizedTranslator()
-        let action = sut.translation(fpr: "test.global")
+        let action = sut.translation(for: "test.global")
 
         //Then
         XCTAssertEqual(expected, action)

@@ -1,5 +1,5 @@
 //
-//  RepositoryMock.swift
+//  RepositoryParameterMock.swift
 //  RxVipKitTests
 //
 //  Created by SANGBONG MOON on 21/01/2019.
@@ -8,7 +8,7 @@
 
 @testable import RxVipKit
 
-struct RepositoryMock: RespositoryParameter {
+struct RepositoryParameterMock: RespositoryParameter {
 
     let testValue: String
 }

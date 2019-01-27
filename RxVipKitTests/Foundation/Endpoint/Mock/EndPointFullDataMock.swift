@@ -10,7 +10,7 @@
 
 enum EndPointFullDataMock: Endpoint {
 
-    case post(with: RepositoryFullDataMock)
+    case post(with: RespositoryParameterFullDataMock)
 
     private enum Constant {
         static let baseURL = "http://localhost:7000"
