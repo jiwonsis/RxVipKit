@@ -28,8 +28,8 @@
 		29367C1821F4DC5C00C84F0D /* LoggerDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1721F4DC5C00C84F0D /* LoggerDITests.swift */; };
 		29367C1A21F4DD2C00C84F0D /* InterceptorChainDiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1921F4DD2C00C84F0D /* InterceptorChainDiTests.swift */; };
 		29367C1D21F4DF8F00C84F0D /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1C21F4DF8F00C84F0D /* Translator.swift */; };
-		29367C1F21F4DFA000C84F0D /* NSLocalizedTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */; };
-		29367C2221F4E39800C84F0D /* NSLocalizedTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */; };
+		29367C1F21F4DFA000C84F0D /* NSLocalizedStringTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C1E21F4DFA000C84F0D /* NSLocalizedStringTranslator.swift */; };
+		29367C2221F4E39800C84F0D /* NSLocalizedStringTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2121F4E39800C84F0D /* NSLocalizedStringTranslatorTests.swift */; };
 		29367C2521F4E4AC00C84F0D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2421F4E4AC00C84F0D /* Endpoint.swift */; };
 		29367C2821F4E4C300C84F0D /* EndpointMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2721F4E4C300C84F0D /* EndpointMock.swift */; };
 		29367C2B21F4E52000C84F0D /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29367C2A21F4E52000C84F0D /* HttpMethod.swift */; };
@@ -49,7 +49,7 @@
 		2971FC6F21FAFCC300988B10 /* RepositoryTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC6E21FAFCC300988B10 /* RepositoryTestMock.swift */; };
 		2971FC7121FAFD4E00988B10 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7021FAFD4E00988B10 /* Repository.swift */; };
 		2971FC7321FAFF3700988B10 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7221FAFF3700988B10 /* RepositoryTests.swift */; };
-		2971FC7721FB003B00988B10 /* AnyRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7621FB003B00988B10 /* AnyRespository.swift */; };
+		2971FC7721FB003B00988B10 /* AnyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7621FB003B00988B10 /* AnyRepository.swift */; };
 		2971FC7921FC372400988B10 /* EndpointNoContentMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC7821FC372400988B10 /* EndpointNoContentMock.swift */; };
 		2971FC8421FC9D7A00988B10 /* EventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC8321FC9D7A00988B10 /* EventResponse.swift */; };
 		2971FC8621FC9DB400988B10 /* EventResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2971FC8521FC9DB400988B10 /* EventResponseCode.swift */; };
@@ -169,8 +169,8 @@
 		29367C1721F4DC5C00C84F0D /* LoggerDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerDITests.swift; sourceTree = "<group>"; };
 		29367C1921F4DD2C00C84F0D /* InterceptorChainDiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterceptorChainDiTests.swift; sourceTree = "<group>"; };
 		29367C1C21F4DF8F00C84F0D /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
-		29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedTranslator.swift; sourceTree = "<group>"; };
-		29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedTranslatorTests.swift; sourceTree = "<group>"; };
+		29367C1E21F4DFA000C84F0D /* NSLocalizedStringTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringTranslator.swift; sourceTree = "<group>"; };
+		29367C2121F4E39800C84F0D /* NSLocalizedStringTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLocalizedStringTranslatorTests.swift; sourceTree = "<group>"; };
 		29367C2421F4E4AC00C84F0D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		29367C2721F4E4C300C84F0D /* EndpointMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointMock.swift; sourceTree = "<group>"; };
 		29367C2A21F4E52000C84F0D /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 		2971FC6E21FAFCC300988B10 /* RepositoryTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTestMock.swift; sourceTree = "<group>"; };
 		2971FC7021FAFD4E00988B10 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		2971FC7221FAFF3700988B10 /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
-		2971FC7621FB003B00988B10 /* AnyRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRespository.swift; sourceTree = "<group>"; };
+		2971FC7621FB003B00988B10 /* AnyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRepository.swift; sourceTree = "<group>"; };
 		2971FC7821FC372400988B10 /* EndpointNoContentMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointNoContentMock.swift; sourceTree = "<group>"; };
 		2971FC8321FC9D7A00988B10 /* EventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponse.swift; sourceTree = "<group>"; };
 		2971FC8521FC9DB400988B10 /* EventResponseCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventResponseCode.swift; sourceTree = "<group>"; };
@@ -398,7 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				29367C1C21F4DF8F00C84F0D /* Translator.swift */,
-				29367C1E21F4DFA000C84F0D /* NSLocalizedTranslator.swift */,
+				29367C1E21F4DFA000C84F0D /* NSLocalizedStringTranslator.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 		29367C2021F4E38600C84F0D /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				29367C2121F4E39800C84F0D /* NSLocalizedTranslatorTests.swift */,
+				29367C2121F4E39800C84F0D /* NSLocalizedStringTranslatorTests.swift */,
 			);
 			path = Translator;
 			sourceTree = "<group>";
@@ -446,7 +446,7 @@
 			children = (
 				29367C2D21F4E6FB00C84F0D /* RepositoryParameter.swift */,
 				2971FC7021FAFD4E00988B10 /* Repository.swift */,
-				2971FC7621FB003B00988B10 /* AnyRespository.swift */,
+				2971FC7621FB003B00988B10 /* AnyRepository.swift */,
 				298B683521FA1EFE003E0CBB /* Result.swift */,
 			);
 			path = Repository;
@@ -1153,7 +1153,7 @@
 				F426E4BB56D222A4A9B4E9A3 /* Logger.swift in Sources */,
 				29ED297E21FDC74100732841 /* IntValueValidator.swift in Sources */,
 				29CFFB1E21F75600007221A0 /* EventParameterKey.swift in Sources */,
-				29367C1F21F4DFA000C84F0D /* NSLocalizedTranslator.swift in Sources */,
+				29367C1F21F4DFA000C84F0D /* NSLocalizedStringTranslator.swift in Sources */,
 				29ED295921FDAE8500732841 /* Presenter.swift in Sources */,
 				29EAB0B221FCA3C300C9481E /* AppEventResponse.swift in Sources */,
 				F426E924EDDD5DFC003BF915 /* LoggerLevel.swift in Sources */,
@@ -1178,7 +1178,7 @@
 				2971FC8621FC9DB400988B10 /* EventResponseCode.swift in Sources */,
 				298B681F21FA0AFC003E0CBB /* NetworkAdapter.swift in Sources */,
 				29CFFB5121F76F2F007221A0 /* InvalidFormAppError.swift in Sources */,
-				2971FC7721FB003B00988B10 /* AnyRespository.swift in Sources */,
+				2971FC7721FB003B00988B10 /* AnyRepository.swift in Sources */,
 				29CFFB2521F758C5007221A0 /* AppAction.swift in Sources */,
 				29CFFB5921F77112007221A0 /* AnyTransformer.swift in Sources */,
 				298B680621F9E5AE003E0CBB /* HTTPStatusCode.swift in Sources */,
@@ -1264,7 +1264,7 @@
 				293F638621F8A9F300A8F4FF /* EndPointFullDataMock.swift in Sources */,
 				29CFFB3921F76BD9007221A0 /* MalformedURLAppErrorTests.swift in Sources */,
 				2971FC6D21FAEFED00988B10 /* AppHTTPClientTyoeTests.swift in Sources */,
-				29367C2221F4E39800C84F0D /* NSLocalizedTranslatorTests.swift in Sources */,
+				29367C2221F4E39800C84F0D /* NSLocalizedStringTranslatorTests.swift in Sources */,
 				29367C3121F4E72200C84F0D /* RepositoryParameterMock.swift in Sources */,
 				29ED296121FDB19D00732841 /* AnyPresenterTests.swift in Sources */,
 				29367C1421F4D92400C84F0D /* AnyInterceptorTest.swift in Sources */,

@@ -3,7 +3,7 @@
 // Copyright (c) 2019 Scott Moon. All rights reserved.
 //
 
-enum LoggerLevel {
+public enum LoggerLevel {
     case debug
     case verbose
     case info

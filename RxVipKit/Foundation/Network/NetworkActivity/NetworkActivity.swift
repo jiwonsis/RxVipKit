@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol NetworkActivity {
+public protocol NetworkActivity {
     func show()
     func hide()
 }

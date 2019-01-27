@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol Validator {
+public protocol Validator {
     associatedtype Object
     associatedtype Error
 

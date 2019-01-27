@@ -5,12 +5,12 @@
 
 import RxSwift
 
-struct AnyInterceptor<Input> {
+public struct AnyInterceptor<Input> {
     private let _intercept: (InterceptorChain<Input>) -> Observable<Input>
 
     // MARK: Initializer
 
-    init<T: Interceptor>(base: T) where T.Input == Input {
+    public init<T: Interceptor>(base: T) where T.Input == Input {
         _intercept = base.interceptor
     }
 }
@@ -18,7 +18,7 @@ struct AnyInterceptor<Input> {
 // MARK: Interceptor
 
 extension AnyInterceptor: Interceptor {
-    func interceptor(chain: InterceptorChain<Input>) -> Observable<Input> {
+    public func interceptor(chain: InterceptorChain<Input>) -> Observable<Input> {
         return _intercept(chain)
     }
 }

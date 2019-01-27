@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-protocol Router {
+public protocol Router {
     associatedtype Object
 
     var callback: Observable<Object> { get }

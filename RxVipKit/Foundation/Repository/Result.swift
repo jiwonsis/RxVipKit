@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum Result<T> {
+public enum Result<T> {
     case noContent
     case value(T)
 }

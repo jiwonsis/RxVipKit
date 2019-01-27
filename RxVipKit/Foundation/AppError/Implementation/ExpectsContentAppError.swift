@@ -6,21 +6,23 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct ExpectsContentAppError {
+public struct ExpectsContentAppError {
     private enum Constant {
         static let translationKey = "error.global"
     }
+
+    public init() {}
 }
 
 // MARK: AppError
 
 extension ExpectsContentAppError: AppError {
 
-    var raw: Error? {
+    public var raw: Error? {
         return nil
     }
 
-    var messageKey: String {
+    public var messageKey: String {
         return Constant.translationKey
     }
 }

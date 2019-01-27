@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct SerializationAppError {
+public struct SerializationAppError {
     private let error: Error?
 
     private enum Constant {
@@ -15,7 +15,7 @@ struct SerializationAppError {
 
     // MARK: Intializer
 
-    init(error: Error?) {
+    public init(error: Error?) {
         self.error = error
     }
 

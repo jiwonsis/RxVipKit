@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum ViewState {
+public enum ViewState {
     case loading
     case error(message: String)
     case success

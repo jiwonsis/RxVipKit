@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol Deserializable {
+public protocol Deserializable {
     init(data: Data) throws
 }
 
-protocol AnyInitializable {
+public protocol AnyInitializable {
     init(object: Any) throws
 }
 

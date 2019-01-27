@@ -6,11 +6,11 @@
 import XCTest
 @testable import RxVipKit
 
-class NSLocalizedTranslatorTests: XCTestCase {
+class NSLocalizedStringTranslatorTests: XCTestCase {
 
     // MARK: - Subject under test
 
-    var sut: NSLocalizedTranslator!
+    var sut: NSLocalizedStringTranslator!
 
     override func setUp() {
         super.setUp()
@@ -25,7 +25,7 @@ class NSLocalizedTranslatorTests: XCTestCase {
         let expected = "test.global"
 
         // When
-        sut = NSLocalizedTranslator()
+        sut = NSLocalizedStringTranslator()
         let action = sut.translation(for: "test.global")
 
         //Then

@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol InMemory {
+public protocol InMemory {
     associatedtype Object
 
     var value: Object { get }

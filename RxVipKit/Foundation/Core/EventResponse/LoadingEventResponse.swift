@@ -6,26 +6,35 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct LoadingEventResponse {}
+public struct LoadingEventResponse {
+    private enum Constant {
+        static let data = [EventParameterKey.viewState: ViewState.loading]
+    }
+
+    public init() {}
+}
 
 // MARK: EventResponse
 
 extension LoadingEventResponse: EventResponse {
-    var succeed: Bool {
+
+    public func data<T>(named: String) -> T? {
+        return Constant.data[named] as? T
+    }
+
+    public var succeed: Bool {
         return true
     }
 
-    var data: [String: Any]? {
-        return [
-            EventParameterKey.viewState: ViewState.loading,
-        ]
+    public var data: [String: Any]? {
+        return Constant.data
     }
 
-    var error: Error? {
+    public var error: Error? {
         return nil
     }
 
-    var code: EventResponseCode {
+    public var code: EventResponseCode {
         return .processing
     }
 }

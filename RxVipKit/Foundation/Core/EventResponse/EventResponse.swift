@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol EventResponse {
+public protocol EventResponse {
     var succeed: Bool { get }
     var data: [String: Any]? { get }
     var error: Error? { get }
