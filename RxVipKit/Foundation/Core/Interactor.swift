@@ -9,5 +9,5 @@
 import RxSwift
 
 public protocol Interactor {
-    func handle(request: EventRequest) -> Observable<EventRequest>
+    func handle(request: EventRequest) -> Observable<EventResponse>
 }

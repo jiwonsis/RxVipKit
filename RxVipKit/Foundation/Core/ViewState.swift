@@ -7,7 +7,7 @@
 //
 
 public enum ViewState {
-    case loading
-    case error(message: String)
+    public case loading
+    public case error(message: String)
     case success
 }

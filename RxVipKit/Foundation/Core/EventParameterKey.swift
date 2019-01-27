@@ -7,7 +7,7 @@
 //
 
 public enum EventParameterKey {
-    static let value = "value"
-    static let viewState = "view_state"
-    static let objectValidated = "object_validated"
+    public static let value = "value"
+    public static let viewState = "view_state"
+    public static let objectValidated = "object_validated"
 }
