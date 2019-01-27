@@ -6,6 +6,6 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol Translator {
+public protocol Translator {
     func translation(for key: String) -> String
 }

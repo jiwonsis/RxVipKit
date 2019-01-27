@@ -6,6 +6,6 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol HTTPErrorHandler {
+public protocol HTTPErrorHandler {
     func handle(resoponse: Response) -> Error
 }

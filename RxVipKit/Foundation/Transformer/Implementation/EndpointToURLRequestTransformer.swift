@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct EndpointToURLRequestTransformer {
+public struct EndpointToURLRequestTransformer {
+    public init() {}
 }
 
 // MARK: Transformer
 
 extension EndpointToURLRequestTransformer: Transformer {
-    func transform(object: Endpoint) throws -> URLRequest {
+    public func transform(object: Endpoint) throws -> URLRequest {
         guard let url = URL(string: object.baseURL)?.appendingPathComponent(object.path) else {
             throw MalformedURLAppError()
         }

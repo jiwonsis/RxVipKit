@@ -1,0 +1,2242 @@
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/DefaultAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class DefaultAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: DefaultAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "test default Error Message"
+   26|      1|        sut = DefaultAppError(messageKey: expectedKey)
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/DeserializationAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class AppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: DeserializationAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global"
+   26|      1|        sut = DeserializationAppError(developerMessage: "[Test] - Test Error")
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/ExpectsContentAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class ExpectsContentAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: ExpectsContentAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global"
+   26|      1|        sut = ExpectsContentAppError()
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/InvalidFormAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class InvalidFormAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: InvalidFormAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global.form"
+   26|      1|        sut = InvalidFormAppError()
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/MalformedURLAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class MalformedURLAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: MalformedURLAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global"
+   26|      1|        sut = MalformedURLAppError()
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/NetworkAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class NetworkAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: NetworkAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global.network"
+   26|      1|        sut = NetworkAppError(error: nil)
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/NoRequestParameterAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class NoRequestParameterAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: NoRequestParameterAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global.default"
+   26|      1|        sut = NoRequestParameterAppError()
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/ParameterTypeAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class ParameterTypeAppErrorTest: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: ParameterTypeAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global.default"
+   26|      1|        sut = ParameterTypeAppError(developerMessage: "[Test] - Test Error")
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/AppError/SerializationAppErrorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class SerializationAppErrorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: SerializationAppError!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_initializer() {
+   23|      1|
+   24|      1|        // Given
+   25|      1|        let expectedKey = "error.global.default"
+   26|      1|        sut = SerializationAppError(error: nil)
+   27|      1|
+   28|      1|        // When
+   29|      1|
+   30|      1|        //Then
+   31|      1|
+   32|      1|        XCTAssertNil(sut.raw)
+   33|      1|        XCTAssertEqual(expectedKey, sut.messageKey)
+   34|      1|
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/EventRequestTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class EventRequestTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |
+   13|       |    var sut: EventRequest!
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_initializer() {
+   24|      1|
+   25|      1|        // Given
+   26|      1|
+   27|      1|        let expectedAppAction = AppAction.tap
+   28|      1|        let expectedKey = "test"
+   29|      1|        let expectedValue = "testValue"
+   30|      1|        let expectedParameter: [String: String]? = [expectedKey: expectedValue]
+   31|      1|        let expectedData: [String: Any]? = [expectedKey: expectedKey, expectedValue: expectedValue]
+   32|      1|
+   33|      1|        sut = EventRequest(path: nil, parameters: expectedParameter, data: expectedData, action: expectedAppAction)
+   34|      1|
+   35|      1|        // When
+   36|      1|
+   37|      1|        let expedctedDataValue: [String: Any]? = sut.dataValue()
+   38|      1|
+   39|      1|        //Then
+   40|      1|
+   41|      1|        XCTAssertNil(sut.path)
+   42|      1|        XCTAssertEqual(expectedParameter, sut.parameters)
+   43|      1|        XCTAssertEqual(expectedAppAction, sut.action)
+   44|      1|        XCTAssertEqual(expectedValue, sut.parameter(named: expectedKey))
+   45|      1|        XCTAssertNil(expedctedDataValue)
+   46|      1|
+   47|      1|    }
+   48|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/EventResponse/AppEventResponseTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class AppEventResponseTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: AppEventResponse!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_init() {
+   23|      1|        // Given
+   24|      1|        let expectedSucceed = true
+   25|      1|        let expectedCode = EventResponseCode.ok
+   26|      1|
+   27|      1|        sut = AppEventResponse(code: expectedCode)
+   28|      1|
+   29|      1|        // When
+   30|      1|
+   31|      1|        // Then
+   32|      1|        XCTAssertEqual(expectedSucceed, sut.succeed)
+   33|      1|        XCTAssertNil(sut.data)
+   34|      1|        XCTAssertNil(sut.dataViewState())
+   35|      1|        XCTAssertNil(sut.error)
+   36|      1|        XCTAssertEqual(expectedCode, sut.code)
+   37|      1|
+   38|      1|    }
+   39|       |
+   40|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/EventResponse/LoadingEventResponseTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class LoadingEventResponseTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: LoadingEventResponse!
+   13|       |
+   14|      1|    override func setUp() {
+   15|      1|        super.setUp()
+   16|      1|    }
+   17|       |
+   18|      1|    override func tearDown() {
+   19|      1|        super.tearDown()
+   20|      1|    }
+   21|       |
+   22|      1|    func test_init() {
+   23|      1|        // Given
+   24|      1|        let expectedSucceed = true
+   25|      1|        let expectedCode = EventResponseCode.processing
+   26|      1|
+   27|      1|        sut = LoadingEventResponse()
+   28|      1|
+   29|      1|        // When
+   30|      1|
+   31|      1|        // Then
+   32|      1|        XCTAssertEqual(expectedSucceed, sut.succeed)
+   33|      1|        XCTAssertNotNil(sut.data)
+   34|      1|        XCTAssertNil(sut.error)
+   35|      1|        XCTAssertEqual(expectedCode, sut.code)
+   36|      1|
+   37|      1|    }
+   38|       |
+   39|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/EventResponse/Mock/EventResponseMock.swift:
+    1|       |//
+    2|       |//  EventResponseTests.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 26/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |final class EventResponseMock: EventResponse {
+   12|      0|    var succeed: Bool {
+   13|      0|        return true
+   14|      0|    }
+   15|       |
+   16|      0|    var data: [String: Any]? {
+   17|      0|        return [
+   18|      0|            EventParameterKey.viewState: ViewState.loading,
+   19|      0|        ]
+   20|      0|    }
+   21|       |
+   22|      0|    var error: Error? {
+   23|      0|        return nil
+   24|      0|    }
+   25|       |
+   26|      0|    var code: EventResponseCode {
+   27|      0|        return .processing
+   28|      0|    }
+   29|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/Presenter/AnyPresenterTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |import RxCocoa
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |class AnyPresenterTests: XCTestCase {
+   12|       |
+   13|       |    // MARK: - Subject under test
+   14|       |    var sut: AnyPresenter<TestViewModelMock>!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_init() {
+   25|      1|        // Given
+   26|      1|        let testPresenterMock = TestPresenterMock(translator: NSLocalizedTranslator(), logger: AppLogger())
+   27|      1|
+   28|      1|        sut = AnyPresenter<TestViewModelMock>(base: testPresenterMock)
+   29|      1|
+   30|      1|        // When
+   31|      1|        _ = sut.handle(response: makeEventResponse())
+   32|      1|
+   33|      1|        // Then
+   34|      1|    }
+   35|       |
+   36|      1|    func makeEventResponse() -> EventResponse {
+   37|      1|        let injectDictionary = [
+   38|      1|            "args": [
+   39|      1|                "name": "test name",
+   40|      1|                "surname": "test surname",
+   41|      1|                "age": "34",
+   42|      1|            ],
+   43|      1|        ]
+   44|      1|
+   45|      1|        do {
+   46|      1|            let entity = try TestEntityMock(object: injectDictionary)
+   47|      1|            return AppEventResponse(code: .ok, data: [EventParameterKey.value: entity])
+   48|      1|        } catch {
+   49|      0|            fatalError()
+   50|      0|        }
+   51|      0|    }
+   52|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/Presenter/Mocks/TestPresenterMock.swift:
+    1|       |//
+    2|       |//  TestPresenterMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 27/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |final class TestPresenterMock {
+   12|       |    private let translator: Translator
+   13|       |    private let logger: Logger
+   14|       |
+   15|       |    // MARK: initializer
+   16|       |
+   17|      1|    init(translator: Translator, logger: Logger) {
+   18|      1|        self.translator = translator
+   19|      1|        self.logger = logger
+   20|      1|    }
+   21|       |}
+   22|       |
+   23|       |extension TestPresenterMock: Presenter {
+   24|       |
+   25|      1|    func handle(response: EventResponse) -> TestViewModelMock {
+   26|      1|        switch response.code {
+   27|      1|
+   28|      1|        case .ok:
+   29|      1|            guard let testMock: TestEntityMock = response.dataValue() else {
+   30|      0|                assertionFailure("shold have data")
+   31|      0|
+   32|      0|                return TestViewModelMock(
+   33|      0|                    state: .error(message: translator.translation(for: "error.generic.message")),
+   34|      0|                    buttonTitle: "testButton"
+   35|      0|                )
+   36|      1|            }
+   37|      1|
+   38|      1|            return TestViewModelMock(
+   39|      1|                state: .success,
+   40|      1|                buttonTitle: "test Button",
+   41|      1|                name: testMock.name,
+   42|      1|                surname: testMock.surname,
+   43|      1|                age: testMock.age
+   44|      1|            )
+   45|      1|        default: break
+   46|      1|        }
+   47|      1|        return TestViewModelMock(
+   48|      1|            state: .error(message: translator.translation(for: "error.generic.message")),
+   49|      1|            buttonTitle: "testButton"
+   50|      1|        )
+   51|      1|    }
+   52|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/Router/AnyRouterTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |import RxCocoa
+    9|       |import RxBlocking
+   10|       |@testable import RxVipKit
+   11|       |
+   12|       |class AnyRouterTests: XCTestCase {
+   13|       |
+   14|       |    // MARK: - Subject under test
+   15|       |    var sut: AnyRouter<TestEntityMock>!
+   16|       |
+   17|      1|    override func setUp() {
+   18|      1|        super.setUp()
+   19|      1|    }
+   20|       |
+   21|      1|    override func tearDown() {
+   22|      1|        super.tearDown()
+   23|      1|    }
+   24|       |
+   25|      1|    func test_init() {
+   26|      1|        // Given
+   27|      1|        let testRouterMock = TestRouterMock()
+   28|      1|        sut = AnyRouter<TestEntityMock>(base: testRouterMock)
+   29|      1|
+   30|      1|        // When
+   31|      1|        let callBack = sut.callback
+   32|      1|        let route = sut.route(from: nil, request: makeEventRequest())
+   33|      1|
+   34|      1|        // Then
+   35|      1|        XCTAssertNotNil(callBack)
+   36|      1|        XCTAssertNotNil(route)
+   37|      1|    }
+   38|       |
+   39|      1|    func makeEventRequest() -> EventRequest {
+   40|      1|        let injectDictionary = [
+   41|      1|            "args": [
+   42|      1|                "name": "test name",
+   43|      1|                "surname": "test surname",
+   44|      1|                "age": "34",
+   45|      1|            ],
+   46|      1|        ]
+   47|      1|
+   48|      1|        do {
+   49|      1|            let entity = try TestEntityMock(object: injectDictionary)
+   50|      1|            return EventRequest(path: nil, parameters: nil, data: [EventParameterKey.value: entity], action: .navigate)
+   51|      1|        } catch {
+   52|      0|            fatalError()
+   53|      0|        }
+   54|      0|
+   55|      0|    }
+   56|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/Router/Mocks/TestRouterMock.swift:
+    1|       |//
+    2|       |//  TestRouterMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 27/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |import RxSwift
+   11|       |
+   12|       |@testable import RxVipKit
+   13|       |
+   14|       |final class TestRouterMock: Router {
+   15|       |    private let subject: PublishSubject<TestEntityMock>
+   16|       |
+   17|       |    // MARK: Initializer
+   18|       |
+   19|      1|    init() {
+   20|      1|        subject = PublishSubject()
+   21|      1|    }
+   22|       |
+   23|       |    // MARK: Router
+   24|       |
+   25|      1|    var callback: Observable<TestEntityMock> {
+   26|      1|        return subject.asObservable()
+   27|      1|    }
+   28|       |
+   29|      1|    func route(from root: UIViewController?, request: EventRequest) -> Observable<EventResponse> {
+   30|      1|        root?.dismiss(animated: true, completion: nil)
+   31|      1|
+   32|      1|        guard let testEntity: TestEntityMock = request.dataValue() else {
+   33|      0|            assertionFailure("Should have User object")
+   34|      0|
+   35|      0|            return Observable.never()
+   36|      1|        }
+   37|      1|
+   38|      1|        subject.asObserver().onNext(testEntity)
+   39|      1|
+   40|      1|        return Observable.never()
+   41|      1|    }
+   42|       |
+   43|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/VIewType/AnyViewTypeTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |import RxCocoa
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |class AnyViewTypeTests: XCTestCase {
+   12|       |
+   13|       |    // MARK: - Subject under test
+   14|       |    var sut: AnyViewType<TestViewModelMock>!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_init() {
+   25|      1|        // Given
+   26|      1|        let testViewTypeMock = TestViewTypeMock()
+   27|      1|        let testViewModelMock = TestViewModelMock(state: .loading, buttonTitle: "testButton")
+   28|      1|        let driverTestViewModelMock = makeObserable(viewModel: testViewModelMock).asDriver(onErrorJustReturn: testViewModelMock)
+   29|      1|
+   30|      1|        sut = AnyViewType<TestViewModelMock>(base: testViewTypeMock)
+   31|      1|
+   32|      1|        // When
+   33|      1|        let view = sut.view
+   34|      1|
+   35|      1|        // Then
+   36|      1|        XCTAssertEqual(view.description, testViewTypeMock.view.description)
+   37|      1|        XCTAssertNotNil(sut.request())
+   38|      1|        XCTAssertNotNil(sut.update(with: driverTestViewModelMock))
+   39|      1|    }
+   40|       |
+   41|      1|    func makeObserable(viewModel: TestViewModelMock) -> Observable<TestViewModelMock> {
+   42|      1|        return Observable<TestViewModelMock>.just(viewModel)
+   43|      1|    }
+   44|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/VIewType/Mock/TestViewModelMock.swift:
+    1|       |//
+    2|       |//  TestViewModel.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 27/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |struct TestViewModelMock {
+   12|       |    let state: ViewState
+   13|       |    let buttonTitle: String
+   14|       |
+   15|       |    let name: String?
+   16|       |    let surname: String?
+   17|       |    let age: String?
+   18|       |
+   19|       |    // MARK: Initializer
+   20|       |
+   21|      2|    init(state: ViewState, buttonTitle: String, name: String? = nil, surname: String? = nil, age: String? = nil) {
+   22|      2|        self.state = state
+   23|      2|        self.buttonTitle = buttonTitle
+   24|      2|        self.name = name
+   25|      2|        self.surname = surname
+   26|      2|        self.age = age
+   27|      2|    }
+   28|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Core/VIewType/Mock/TestViewTypeMock.swift:
+    1|       |//
+    2|       |//  TestViewTypeMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 27/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import UIKit
+   10|       |import RxSwift
+   11|       |import RxCocoa
+   12|       |
+   13|       |@testable import RxVipKit
+   14|       |
+   15|       |final class TestViewTypeMock: UIView {
+   16|       |    private let disposeBag = DisposeBag()
+   17|       |    private let nameLabel: UILabel
+   18|       |    private let surnameLabel: UILabel
+   19|       |    private let ageLabel: UILabel
+   20|       |    private let button: UIButton
+   21|       |    private let activityIndicator: UIActivityIndicatorView
+   22|       |
+   23|       |    // MARK: Initializer
+   24|       |
+   25|      1|    init() {
+   26|      1|        nameLabel = UILabel()
+   27|      1|        surnameLabel = UILabel()
+   28|      1|        ageLabel = UILabel()
+   29|      1|        button = UIButton()
+   30|      1|        activityIndicator = UIActivityIndicatorView()
+   31|      1|
+   32|      1|        super.init(frame: .zero)
+   33|      1|    }
+   34|       |
+   35|      0|    required init?(coder aDecoder: NSCoder) {
+   36|      0|        fatalError("init(coder:) has not been implemented")
+   37|      0|    }
+   38|       |
+   39|       |}
+   40|       |
+   41|       |// MARK: ViewType
+   42|       |
+   43|       |extension TestViewTypeMock: ViewType {
+   44|       |
+   45|      1|    func request() -> Observable<EventRequest> {
+   46|      1|        let tap: Observable<EventRequest> = button
+   47|      1|            .rx
+   48|      1|            .tap
+   49|      1|            .asObservable()
+   50|      1|            .map { EventRequest(action: .tap) }
+   51|      1|
+   52|      1|        return tap
+   53|      1|    }
+   54|       |
+   55|      1|    func update(with provider: Driver<TestViewModelMock>) {
+   56|      1|        provider
+   57|      1|            .map { (viewModel) -> Bool in
+   58|      1|                if case  .loading = viewModel.state {
+   59|      1|                    return true
+   60|      1|                } else {
+   61|      0|                    return false
+   62|      0|                }
+   63|      0|        }
+   64|      1|        .drive(activityIndicator.rx.isAnimating)
+   65|      1|        .disposed(by: disposeBag)
+   66|      1|    }
+   67|       |
+   68|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Endpoint/EndpointTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class EndpointTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |
+   13|      1|    override func setUp() {
+   14|      1|        super.setUp()
+   15|      1|    }
+   16|       |
+   17|      1|    override func tearDown() {
+   18|      1|        super.tearDown()
+   19|      1|    }
+   20|       |
+   21|      1|    func test_initializer() {
+   22|      1|        // Given
+   23|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   24|      1|
+   25|      1|        // When
+   26|      1|        let sut = EndpointBaseMock.get(with: parameterMock)
+   27|      1|        let headers = sut.headers
+   28|      1|        let bodyParameters = sut.bodyParameters
+   29|      1|        let queryParameters = sut.queryParameters
+   30|      1|
+   31|      1|        //Then
+   32|      1|        XCTAssertNil(headers)
+   33|      1|        XCTAssertNil(bodyParameters)
+   34|      1|        XCTAssertNil(queryParameters)
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Interceptor/AnyInterceptorTest.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class AnyInterceptorTest: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var disposeBag: DisposeBag!
+   15|       |    var sut: AnyInterceptor<URLRequest>!
+   16|       |
+   17|      1|    override func setUp() {
+   18|      1|        super.setUp()
+   19|      1|    }
+   20|       |
+   21|      1|    override func tearDown() {
+   22|      1|        super.tearDown()
+   23|      1|    }
+   24|       |
+   25|      1|    func test_initializer() {
+   26|      1|        // Given
+   27|      1|        let loggerInterceptor = LoggerInterceptor(logger: AppLogger())
+   28|      1|
+   29|      1|        // When
+   30|      1|        sut = AnyInterceptor<URLRequest>(base: loggerInterceptor)
+   31|      1|
+   32|      1|        //Then
+   33|      1|    }
+   34|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Interceptor/InterceptorChainDiTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import Swinject
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class InterceptorChainDiTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var sut: Container!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_initializer() {
+   25|      1|        // Given
+   26|      1|
+   27|      1|        // When
+   28|      1|        sut = Container()
+   29|      1|        sut
+   30|      1|            .register(Logger.self) { _ -> Logger in
+   31|      0|                AppLogger()
+   32|      0|            }
+   33|      1|            .inObjectScope(.container)
+   34|      1|
+   35|      1|        sut
+   36|      1|            .register(InterceptorChain<URLRequest>.self) { (resolver) -> InterceptorChain<URLRequest> in
+   37|      0|                InterceptorChain<URLRequest>()
+   38|      0|                    .add(interceptor: AnyInterceptor(base: LoggerInterceptor(logger: resolver.resolve(Logger.self)!)))
+   39|      0|            }
+   40|      1|            .inObjectScope(.container)
+   41|      1|
+   42|      1|        //Then
+   43|      1|
+   44|      1|    }
+   45|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Interceptor/InterceptorChainTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class InterceptorChainTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var disposeBag: DisposeBag!
+   15|       |    var sut: InterceptorChain<URLRequest>!
+   16|       |
+   17|      1|    override func setUp() {
+   18|      1|        super.setUp()
+   19|      1|    }
+   20|       |
+   21|      1|    override func tearDown() {
+   22|      1|        super.tearDown()
+   23|      1|    }
+   24|       |
+   25|      1|    func test_initializer() {
+   26|      1|        // Given
+   27|      1|        disposeBag = DisposeBag()
+   28|      1|        let logger = AppLogger()
+   29|      1|        let intercepter = AnyInterceptor(base: LoggerInterceptor(logger: logger))
+   30|      1|        let urlRequest = URLRequest(url: URL(string: "test.com")!)
+   31|      1|
+   32|      1|        // When
+   33|      1|        sut = InterceptorChain<URLRequest>()
+   34|      1|        let expectedChain = sut.add(interceptor: intercepter)
+   35|      1|
+   36|      1|        sut.proceed(object: urlRequest)
+   37|      2|            .subscribe { request in
+   38|      2|                print(request)
+   39|      2|            }
+   40|      1|            .disposed(by: disposeBag)
+   41|      1|
+   42|      1|        //Then
+   43|      1|        XCTAssertNotNil(expectedChain)
+   44|      1|    }
+   45|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Logger/AppLoggerTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import Swinject
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class AppLoggerTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var sut: AppLogger!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_initializer() {
+   25|      1|        // Given
+   26|      1|
+   27|      1|        // When
+   28|      1|        sut = AppLogger()
+   29|      1|        sut.log(level: .debug, message: "test debug")
+   30|      1|        sut.log(level: .verbose, message: "test verbose")
+   31|      1|        sut.log(level: .info, message: "test info")
+   32|      1|        sut.log(level: .warning, message: "test warning")
+   33|      1|        sut.log(level: .error, message: "test error")
+   34|      1|        //Then
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Logger/LoggerDITests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import Swinject
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class LoggerDITests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var sut: Container!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_initializer() {
+   25|      1|        // Given
+   26|      1|
+   27|      1|        // When
+   28|      1|        sut = Container()
+   29|      1|        sut.register(Logger.self) { _ -> Logger in
+   30|      0|            AppLogger()
+   31|      0|        }
+   32|      1|        .inObjectScope(.container)
+   33|      1|
+   34|      1|        //Then
+   35|      1|
+   36|      1|    }
+   37|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Logger/LoggerInterceptorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class LoggerInterceptorTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |
+   14|       |    var disposeBag: DisposeBag!
+   15|       |    var sut: LoggerInterceptor!
+   16|       |    var appLogger: AppLogger!
+   17|       |
+   18|      1|    override func setUp() {
+   19|      1|        super.setUp()
+   20|      1|    }
+   21|       |
+   22|      1|    override func tearDown() {
+   23|      1|        super.tearDown()
+   24|      1|    }
+   25|       |
+   26|      1|    func dummyIntercepterChain() -> InterceptorChain<URLRequest> {
+   27|      1|        let urlRequest = URLRequest(url: URL(string: "test.com")!)
+   28|      1|        disposeBag = DisposeBag()
+   29|      1|        let interceptors = [AnyInterceptor(base: LoggerInterceptor(logger: appLogger))]
+   30|      1|        return InterceptorChain<URLRequest>(interceptors: interceptors, input: urlRequest)
+   31|      1|    }
+   32|       |
+   33|      1|    func test_initializer() {
+   34|      1|        // Given
+   35|      1|        appLogger = AppLogger()
+   36|      1|
+   37|      1|        // When
+   38|      1|        sut = LoggerInterceptor(logger: appLogger)
+   39|      1|        sut.interceptor(chain: dummyIntercepterChain())
+   40|      2|            .subscribe { (request) in
+   41|      2|                print(request)
+   42|      2|            }
+   43|      1|            .disposed(by: disposeBag)
+   44|      1|
+   45|      1|        //Then
+   46|      1|    }
+   47|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Network/HTTPClientType/AppHTTPClientTyoeTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxBlocking
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class AppHTTPClientTyoeTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    let stubServer = StubServer()
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|        stubServer.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|        stubServer.tearDown()
+   23|      1|    }
+   24|       |
+   25|      1|    func test_initWithDesializableTypeRequest() {
+   26|      1|        // Given
+   27|      1|        let endpointToURLRequstTransformer = EndpointToURLRequestTransformer()
+   28|      1|
+   29|      1|        let uiapplicationNetworkActivityMock = UIApplicationNetworkActivityMock(application: UIApplication.shared)
+   30|      1|        let sessionConfig = URLSessionConfiguration.default
+   31|      1|        sessionConfig.timeoutIntervalForRequest = 30
+   32|      1|        sessionConfig.timeoutIntervalForResource = 30
+   33|      1|        let session = URLSession(configuration: sessionConfig)
+   34|      1|        let networkAdapter = URLSessionNetworkAdapter(networkActivity: uiapplicationNetworkActivityMock, session: session)
+   35|      1|
+   36|      1|        let requestChain = InterceptorChain<URLRequest>()
+   37|      1|        let responseChain = InterceptorChain<Response>()
+   38|      1|        let appErrorHandler = AppErrorHandlerMock()
+   39|      1|
+   40|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   41|      1|
+   42|      1|        let sut = AppHTTPClientType(
+   43|      1|            transformer: AnyTransformer(base: endpointToURLRequstTransformer),
+   44|      1|            networkAdapter: networkAdapter,
+   45|      1|            requestChain: requestChain,
+   46|      1|            responseChain: responseChain,
+   47|      1|            httpErrorHandler: appErrorHandler)
+   48|      1|
+   49|      1|        // When
+   50|      1|        var result: Response?
+   51|      1|        do {
+   52|      1|            result = try sut.request(endpoint: EndpointNoContentMock.update(with: parameterMock)).toBlocking().first()
+   53|      1|
+   54|      1|            if let data = result?.data {
+   55|      1|                let expected = ""
+   56|      1|                XCTAssertEqual(expected, String(data: data, encoding: .utf8))
+   57|      1|            }
+   58|      1|        } catch {
+   59|      0|            XCTAssertNil(error)
+   60|      1|        }
+   61|      1|
+   62|      1|        // Then
+   63|      1|        XCTAssertNotNil(result)
+   64|      1|    }
+   65|       |
+   66|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Network/HttpErrorHandler/Mock/AppErrorHandlerMock.swift:
+    1|       |//
+    2|       |//  AppErrorHandlerMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 24/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |struct AppErrorHandlerMock {
+   12|       |}
+   13|       |
+   14|       |// MARK: HTTPErrorHandler
+   15|       |extension AppErrorHandlerMock: HTTPErrorHandler {
+   16|       |
+   17|      1|    func handle(resoponse: Response) -> Error {
+   18|      1|
+   19|      1|        // All the error logic error of the api should be handle here
+   20|      1|
+   21|      1|        return NetworkAppError(error: nil)
+   22|      1|    }
+   23|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Network/NetworkActivity/NetworkActivityMock.swift:
+    1|       |//
+    2|       |//  NetworkActivityMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 25/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |@testable import RxVipKit
+   12|       |
+   13|       |final class UIApplicationNetworkActivityMock {
+   14|       |    private let application: UIApplication
+   15|       |    private var counter: Int
+   16|       |
+   17|       |    // MARK: Initializer
+   18|       |
+   19|      7|    init(application: UIApplication) {
+   20|      7|        self.application = application
+   21|      7|        counter = 0
+   22|      7|    }
+   23|       |}
+   24|       |
+   25|       |// MARK: NetworkActivity
+   26|       |
+   27|       |extension UIApplicationNetworkActivityMock: NetworkActivity {
+   28|      8|    func show() {
+   29|      8|        counter += 1
+   30|      8|
+   31|      8|        DispatchQueue.main.async {
+   32|      8|            if false == self.application.isNetworkActivityIndicatorVisible {
+   33|      8|                self.application.isNetworkActivityIndicatorVisible = true
+   34|      8|            }
+   35|      8|        }
+   36|      8|    }
+   37|       |
+   38|      8|    func hide() {
+   39|      8|        if counter > 0 {
+   40|      8|            counter -= 1
+   41|      8|        }
+   42|      8|
+   43|      8|        DispatchQueue.main.async {
+   44|      8|            if self.counter == 0 && self.application.isNetworkActivityIndicatorVisible {
+   45|      0|                self.application.isNetworkActivityIndicatorVisible = false
+   46|      8|            }
+   47|      8|        }
+   48|      8|    }
+   49|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Network/NetworkAdapter/URLSessionNetworkAdapterTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class URLSessionNetworkAdapterTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    let disposeBag = DisposeBag()
+   14|       |    let stubServer = StubServer()
+   15|       |    let uiapplicationNetworkActivityMock = UIApplicationNetworkActivityMock(application: UIApplication.shared)
+   16|       |
+   17|      1|    override func setUp() {
+   18|      1|        super.setUp()
+   19|      1|        stubServer.setUp()
+   20|      1|    }
+   21|       |
+   22|      1|    override func tearDown() {
+   23|      1|        super.tearDown()
+   24|      1|        stubServer.tearDown()
+   25|      1|    }
+   26|       |
+   27|      1|    func test_initWithNetworkAdapter() {
+   28|      1|        // Given
+   29|      1|        let errorExpectation = XCTestExpectation(description: "error event call")
+   30|      1|        let succeedExpectation = XCTestExpectation(description: "succeed event call")
+   31|      1|        let sessionConfig = URLSessionConfiguration.default
+   32|      1|        sessionConfig.timeoutIntervalForRequest = 30
+   33|      1|        sessionConfig.timeoutIntervalForResource = 30
+   34|      1|        let session = URLSession(configuration: sessionConfig)
+   35|      1|
+   36|      1|        let sut = URLSessionNetworkAdapter(networkActivity: uiapplicationNetworkActivityMock, session: session)
+   37|      1|
+   38|      1|        DispatchQueue.main.async {
+   39|      1|            sut
+   40|      1|                .rx_send(request: URLRequest(url: URL(string: "http://localhost:111")!))
+   41|      1|                .subscribe(onNext: { (response: Response) in
+   42|      0|                    XCTAssertNil(response)
+   43|      1|                }, onError: { (error: Error) in
+   44|      1|                    XCTAssertNotNil(error)
+   45|      1|                    errorExpectation.fulfill()
+   46|      1|                })
+   47|      1|                .disposed(by: self.disposeBag)
+   48|      1|
+   49|      1|            sut
+   50|      1|                .rx_send(request: URLRequest(url: self.stubServer.getLogin()))
+   51|      1|                .subscribe(onNext: { (response: Response) in
+   52|      1|                    XCTAssertNotNil(response)
+   53|      1|                    succeedExpectation.fulfill()
+   54|      1|                }, onError: { (error: Error) in
+   55|      0|                    XCTAssertNil(error)
+   56|      0|                })
+   57|      1|                .disposed(by: self.disposeBag)
+   58|      1|        }
+   59|      1|
+   60|      1|        // Then
+   61|      1|        wait(for: [errorExpectation, succeedExpectation], timeout: 5.0)
+   62|      1|    }
+   63|       |
+   64|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Network/Response/ResponseTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class ResponseTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |
+   13|      2|    override func setUp() {
+   14|      2|        super.setUp()
+   15|      2|    }
+   16|       |
+   17|      2|    override func tearDown() {
+   18|      2|        super.tearDown()
+   19|      2|    }
+   20|       |
+   21|      1|    func test_initializer() {
+   22|      1|        // Given
+   23|      1|        let expectedURL = URL(string: "http://test.com")!
+   24|      1|        let request = URLRequest(url: expectedURL)
+   25|      1|        let sut = AppResponse(request: request, data: nil, httpResponse: nil, error: nil)
+   26|      1|
+   27|      1|        // When
+   28|      1|
+   29|      1|        // Then
+   30|      1|        XCTAssertFalse(sut.succeed, "sould be false. when request was nil")
+   31|      1|        XCTAssertEqual(expectedURL, sut.request.url)
+   32|      1|        XCTAssertNil(sut.data)
+   33|      1|        XCTAssertNil(sut.error)
+   34|      1|        XCTAssertNil(sut.statusCode)
+   35|      1|        XCTAssertNil(sut.headers)
+   36|      1|    }
+   37|       |
+   38|      1|    func test_initializerWhenInjectedURLReponse() {
+   39|      1|        // Give
+   40|      1|        let url = URL(string: "http://test.com")!
+   41|      1|        let request = URLRequest(url: url)
+   42|      1|        let expectedHeader = ["Cookie": "sessionId=123123"]
+   43|      1|        let expectedStatusCode = HTTPStatusCode.ok.rawValue
+   44|      1|        let response = HTTPURLResponse(url: url, statusCode: expectedStatusCode, httpVersion: "HTTP 1.1", headerFields: expectedHeader)
+   45|      1|        let sut = AppResponse(request: request, data: nil, httpResponse: response, error: nil)
+   46|      1|
+   47|      1|        // When
+   48|      1|
+   49|      1|        // Then
+   50|      1|        XCTAssertTrue(sut.succeed)
+   51|      1|        XCTAssertEqual(expectedStatusCode, sut.statusCode?.rawValue)
+   52|      1|        XCTAssertEqual(expectedHeader["Cookie"], sut.headers?["Cookie"] as? String)
+   53|      1|    }
+   54|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Parser/DeserializableTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class DeserializableTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: AnyTransformer<[String: String], TestEntityMock>!
+   13|       |    let expectedTestMock = TestEntityMock(name: "test name", surname: "test surname", age: "34")
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_extentionDeserializer() {
+   24|      1|        let injectDictionary = [
+   25|      1|            "args": [
+   26|      1|                "name": "test name",
+   27|      1|                "surname": "test surname",
+   28|      1|                "age": "34",
+   29|      1|            ],
+   30|      1|        ]
+   31|      1|
+   32|      1|        let injectJSONData = "{\"args\":{\"name\": \"test name\", \"surname\": \"test surname\", \"age\": \"34\"}}".data(using: .utf8)!
+   33|      1|
+   34|      1|        do {
+   35|      1|            let result = try TestEntityMock(object: injectDictionary)
+   36|      1|            XCTAssertEqual(expectedTestMock, result)
+   37|      1|        } catch {
+   38|      0|            XCTFail(error.localizedDescription)
+   39|      1|        }
+   40|      1|
+   41|      1|        do {
+   42|      1|            let result = try TestEntityMock(data: injectJSONData)
+   43|      1|            XCTAssertEqual(expectedTestMock, result)
+   44|      1|        } catch {
+   45|      0|            XCTFail(error.localizedDescription)
+   46|      1|        }
+   47|      1|    }
+   48|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Repository/Mock/RepositoryTestMock.swift:
+    1|       |//
+    2|       |//  RepositoryTestMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 25/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import RxSwift
+   10|       |
+   11|       |@testable import RxVipKit
+   12|       |
+   13|       |final class RepositoryTestMock {
+   14|       |    private let _httpClient: HTTPClientType
+   15|       |
+   16|       |    // MARK: Initializer
+   17|      5|    init(httpClient: HTTPClientType) {
+   18|      5|        _httpClient = httpClient
+   19|      5|    }
+   20|       |}
+   21|       |
+   22|       |// MARK: Repository
+   23|       |
+   24|       |extension RepositoryTestMock: Repository {
+   25|       |
+   26|      1|    func get(with parameter: RespositoryParameter) -> Observable<Result<TestEntityMock>> {
+   27|      1|
+   28|      1|        guard let testEntityParameter = parameter as? RepositoryParameterMock else {
+   29|      0|            return Observable.error(ParameterTypeAppError(developerMessage: "Parameter should be typed RepositoryParameterMock"))
+   30|      1|        }
+   31|      1|
+   32|      1|        return _httpClient.request(endpoint: EndpointBaseMock.get(with: testEntityParameter))
+   33|      1|    }
+   34|       |
+   35|      1|    func post(with parameter: RespositoryParameter) -> Observable<Result<TestEntityMock>> {
+   36|      1|
+   37|      1|        guard let testEntityParameter = parameter as? RepositoryParameterMock else {
+   38|      0|            return Observable.error(ParameterTypeAppError(developerMessage: "Parameter should be typed RepositoryParameterMock"))
+   39|      1|        }
+   40|      1|
+   41|      1|        return _httpClient.request(endpoint: EndpointBaseMock.post(with: testEntityParameter))
+   42|      1|    }
+   43|       |
+   44|      1|    func put(with parameter: RespositoryParameter) -> Observable<Result<TestEntityMock>> {
+   45|      1|
+   46|      1|        guard let testEntityParameter = parameter as? RepositoryParameterMock else {
+   47|      0|            return Observable.error(ParameterTypeAppError(developerMessage: "Parameter should be typed RepositoryParameterMock"))
+   48|      1|        }
+   49|      1|
+   50|      1|        return _httpClient.request(endpoint: EndpointBaseMock.put(with: testEntityParameter))
+   51|      1|    }
+   52|       |
+   53|      1|    func patch(with parameter: RespositoryParameter) -> Observable<Result<TestEntityMock>> {
+   54|      1|
+   55|      1|        guard let testEntityParameter = parameter as? RepositoryParameterMock else {
+   56|      0|            return Observable.error(ParameterTypeAppError(developerMessage: "Parameter should be typed RepositoryParameterMock"))
+   57|      1|        }
+   58|      1|
+   59|      1|        return _httpClient.request(endpoint: EndpointBaseMock.patch(with: testEntityParameter))
+   60|      1|    }
+   61|       |
+   62|      1|    func delete(with parameter: RespositoryParameter) -> Observable<Result<TestEntityMock>> {
+   63|      1|
+   64|      1|        guard let testEntityParameter = parameter as? RepositoryParameterMock else {
+   65|      0|            return Observable.error(ParameterTypeAppError(developerMessage: "Parameter should be typed RepositoryParameterMock"))
+   66|      1|        }
+   67|      1|
+   68|      1|        return _httpClient.request(endpoint: EndpointBaseMock.delete(with: testEntityParameter))
+   69|      1|    }
+   70|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Repository/Mock/TestEntityMock.swift:
+    1|       |//
+    2|       |//  ModelMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 23/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |struct TestEntityMock: Deserializable {
+   12|       |    let name: String
+   13|       |    let surname: String
+   14|       |    let age: String
+   15|       |
+   16|       |    fileprivate enum Key {
+   17|       |        static let args = "args"
+   18|       |        static let name = "name"
+   19|       |        static let surname = "surname"
+   20|       |        static let age = "age"
+   21|       |    }
+   22|       |}
+   23|       |
+   24|       |extension TestEntityMock: AnyInitializable {
+   25|      6|    init(object: Any) throws {
+   26|      6|        guard
+   27|      6|            let dictionary = object as? [String: Any],
+   28|      6|            let args = dictionary[Key.args] as? [String: Any]
+   29|      6|            else {
+   30|      1|                throw DeserializationAppError(developerMessage: "[TestEntityMock] - Not a dictionary")
+   31|      5|        }
+   32|      5|
+   33|      5|        guard
+   34|      5|            let name = args[Key.name] as? String,
+   35|      5|            let surname = args[Key.surname] as? String,
+   36|      5|            let age = args[Key.age] as? String
+   37|      5|            else {
+   38|      0|                throw DeserializationAppError(developerMessage: "[TestEntityMock] - Missing value")
+   39|      5|        }
+   40|      5|
+   41|      5|        self.name = name
+   42|      5|        self.surname = surname
+   43|      5|        self.age = age
+   44|      5|    }
+   45|       |}
+   46|       |
+   47|       |extension TestEntityMock: Equatable {
+   48|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Repository/RepositoryTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class AnyRepositoryTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    let stubServer = StubServer()
+   14|       |    let disposeBag = DisposeBag()
+   15|       |
+   16|      5|    override func setUp() {
+   17|      5|        super.setUp()
+   18|      5|        stubServer.setUp()
+   19|      5|    }
+   20|       |
+   21|      5|    override func tearDown() {
+   22|      5|        super.tearDown()
+   23|      5|        stubServer.tearDown()
+   24|      5|    }
+   25|       |
+   26|      1|    func test_HTTPClientTypeGet() {
+   27|      1|        // Given
+   28|      1|        let expectation = XCTestExpectation(description: "event call")
+   29|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   30|      1|        let sut = createSUT()
+   31|      1|
+   32|      1|        // When & Then
+   33|      1|
+   34|      1|        sut
+   35|      1|            .get(with: parameterMock)
+   36|      1|            .subscribe(onNext: { (result: Result<TestEntityMock>) in
+   37|      1|                XCTAssertNotNil(result)
+   38|      1|                expectation.fulfill()
+   39|      1|            })
+   40|      1|            .disposed(by: disposeBag)
+   41|      1|
+   42|      1|        wait(for: [expectation], timeout: 5.0)
+   43|      1|    }
+   44|       |
+   45|      1|    func test_HTTPClientTypePut() {
+   46|      1|        // Given
+   47|      1|        let expectation = XCTestExpectation(description: "event call")
+   48|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   49|      1|        let sut = createSUT()
+   50|      1|
+   51|      1|        // When & Then
+   52|      1|
+   53|      1|        sut
+   54|      1|            .put(with: parameterMock)
+   55|      1|            .subscribe(onError: { error in
+   56|      1|                XCTAssertNotNil(error)
+   57|      1|                expectation.fulfill()
+   58|      1|            })
+   59|      1|            .disposed(by: disposeBag)
+   60|      1|
+   61|      1|        wait(for: [expectation], timeout: 5.0)
+   62|      1|    }
+   63|       |
+   64|      1|    func test_HTTPClientTypeDelete() {
+   65|      1|        // Given
+   66|      1|        let expectation = XCTestExpectation(description: "event call")
+   67|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   68|      1|        let sut = createSUT()
+   69|      1|
+   70|      1|        // When & Then
+   71|      1|
+   72|      1|        sut
+   73|      1|            .delete(with: parameterMock)
+   74|      1|            .subscribe(onError: { error in
+   75|      1|                XCTAssertNotNil(error)
+   76|      1|                expectation.fulfill()
+   77|      1|            })
+   78|      1|            .disposed(by: disposeBag)
+   79|      1|
+   80|      1|        wait(for: [expectation], timeout: 5.0)
+   81|      1|    }
+   82|       |
+   83|      1|    func test_HTTPClientTypePatch() {
+   84|      1|        // Given
+   85|      1|        let expectation = XCTestExpectation(description: "event call")
+   86|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   87|      1|        let sut = createSUT()
+   88|      1|
+   89|      1|        // When & Then
+   90|      1|
+   91|      1|        sut
+   92|      1|            .patch(with: parameterMock)
+   93|      1|            .subscribe(onError: { error in
+   94|      1|                XCTAssertNotNil(error)
+   95|      1|                expectation.fulfill()
+   96|      1|            })
+   97|      1|            .disposed(by: disposeBag)
+   98|      1|
+   99|      1|        wait(for: [expectation], timeout: 5.0)
+  100|      1|    }
+  101|       |
+  102|      1|    func test_HTTPClientTypePost() {
+  103|      1|        // Given
+  104|      1|        let expectation = XCTestExpectation(description: "event call")
+  105|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+  106|      1|        let sut = createSUT()
+  107|      1|
+  108|      1|        // When & Then
+  109|      1|
+  110|      1|        sut
+  111|      1|            .post(with: parameterMock)
+  112|      1|            .subscribe(onError: { error in
+  113|      1|                XCTAssertNotNil(error)
+  114|      1|                expectation.fulfill()
+  115|      1|            })
+  116|      1|            .disposed(by: disposeBag)
+  117|      1|
+  118|      1|        wait(for: [expectation], timeout: 5.0)
+  119|      1|    }
+  120|       |
+  121|      5|    func createSUT() -> AnyRepository<TestEntityMock> {
+  122|      5|        let endpointToURLRequstTransformer = EndpointToURLRequestTransformer()
+  123|      5|
+  124|      5|        let uiapplicationNetworkActivityMock = UIApplicationNetworkActivityMock(application: UIApplication.shared)
+  125|      5|        let sessionConfig = URLSessionConfiguration.default
+  126|      5|        sessionConfig.timeoutIntervalForRequest = 30
+  127|      5|        sessionConfig.timeoutIntervalForResource = 30
+  128|      5|        let session = URLSession(configuration: sessionConfig)
+  129|      5|        let networkAdapter = URLSessionNetworkAdapter(networkActivity: uiapplicationNetworkActivityMock, session: session)
+  130|      5|
+  131|      5|        let logger = AppLogger()
+  132|      5|        let intercepter = AnyInterceptor(base: LoggerInterceptor(logger: logger))
+  133|      5|
+  134|      5|        let interceptorChain = InterceptorChain<URLRequest>()
+  135|      5|        let requestChain = interceptorChain.add(interceptor: intercepter)
+  136|      5|
+  137|      5|        let responseChain = InterceptorChain<Response>()
+  138|      5|        let appErrorHandler = AppErrorHandlerMock()
+  139|      5|
+  140|      5|        let appHttpClientType = AppHTTPClientType(
+  141|      5|            transformer: AnyTransformer(base: endpointToURLRequstTransformer),
+  142|      5|            networkAdapter: networkAdapter,
+  143|      5|            requestChain: requestChain,
+  144|      5|            responseChain: responseChain,
+  145|      5|            httpErrorHandler: appErrorHandler)
+  146|      5|
+  147|      5|        return AnyRepository<TestEntityMock>(base: RepositoryTestMock(httpClient: appHttpClientType))
+  148|      5|    }
+  149|       |
+  150|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Stub/StubServer.swift:
+    1|       |//
+    2|       |//  HttpStub.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 23/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |import Swifter
+   11|       |
+   12|       |struct StubServerInfo {
+   13|       |    let url: String
+   14|       |    let htmlString: String
+   15|       |}
+   16|       |
+   17|       |class StubServer {
+   18|       |
+   19|       |    let server = HttpServer()
+   20|       |
+   21|      7|    func setUp() {
+   22|      7|        stubSetup()
+   23|      7|        do {
+   24|      7|            _ = try server.start(7000)
+   25|      7|        } catch {
+   26|      0|            fatalError(error.localizedDescription)
+   27|      7|        }
+   28|      7|
+   29|      7|    }
+   30|       |
+   31|      7|    func tearDown() {
+   32|      7|        server.stop()
+   33|      7|    }
+   34|       |
+   35|      1|    func getUrl() -> String {
+   36|      1|        return "http://localhost:7000"
+   37|      1|    }
+   38|       |
+   39|      1|    func getLogin() -> URL {
+   40|      1|        return URL(string: getUrl() + "/login")!
+   41|      1|    }
+   42|       |
+   43|      0|    func getDefault() -> URL {
+   44|      0|        return URL(string: getUrl() + "/default")!
+   45|      0|    }
+   46|       |
+   47|      0|    func getUpdate() -> URL {
+   48|      0|        return URL(string: getUrl() + "/update")!
+   49|      0|    }
+   50|       |
+   51|      7|    func stubSetup() {
+   52|      7|
+   53|      7|        let successResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   54|      1|            return HttpResponse.ok(.data(self.getTestMockData()))
+   55|      1|        }
+   56|      7|
+   57|      7|        let successNoContentResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   58|      2|            return HttpResponse.created
+   59|      2|        }
+   60|      7|
+   61|      7|        let notFoundResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   62|      1|            return HttpResponse.notFound
+   63|      1|        }
+   64|      7|
+   65|      7|        let notMatedSuccessResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   66|      1|            return HttpResponse.ok(.data(self.getTestMockErrorData()))
+   67|      1|        }
+   68|      7|
+   69|      7|        server.GET["/default"] = successResponse
+   70|      7|        server.PUT["/default"] = successNoContentResponse
+   71|      7|        server.DELETE["/default"] = notFoundResponse
+   72|      7|        server.POST["/default"] = notMatedSuccessResponse
+   73|      7|        server.PATCH["/default"] = successNoContentResponse
+   74|      7|
+   75|      7|        let failResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   76|      1|            return HttpResponse.unauthorized
+   77|      1|        }
+   78|      7|        server.GET["/login"] = failResponse
+   79|      7|
+   80|      7|        let noContentResponse: ((HttpRequest) -> HttpResponse) = { _ in
+   81|      1|            return HttpResponse.created
+   82|      1|        }
+   83|      7|        server.PUT["/update"] = noContentResponse
+   84|      7|    }
+   85|       |
+   86|      1|    func getTestMockData() -> Data {
+   87|      1|        return "{\"args\":{\"name\": \"test name\", \"surname\": \"test surname\", \"age\": \"34\"}}".data(using: .utf8)!
+   88|      1|    }
+   89|       |
+   90|      1|    func getTestMockErrorData() -> Data {
+   91|      1|        return "{\"arg\":{\"name\": \"test\", \"surname\": \"test surname\", \"age\": \"34\"}}".data(using: .utf8)!
+   92|      1|    }
+   93|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Transformer/AnyTransformerTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class AnyTransformerTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |    var sut: AnyTransformer<[String: String], TestEntityMock>!
+   13|       |    let expectedTestMock = TestEntityMock(name: "test name", surname: "test surname", age: "34")
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_initializer() {
+   24|      1|
+   25|      1|        let injectedDictionary = ["name": expectedTestMock.name, "surname": expectedTestMock.surname, "age": expectedTestMock.age]
+   26|      1|
+   27|      1|        // Given
+   28|      1|        sut = AnyTransformer(base: DictionaryToTestModelTransformerMock())
+   29|      1|
+   30|      1|        // When
+   31|      1|        let result = try? sut.transform(object: injectedDictionary)
+   32|      1|
+   33|      1|        //Then
+   34|      1|        XCTAssertEqual(expectedTestMock, result)
+   35|      1|    }
+   36|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Transformer/Implementation/EndpointToURLRequestTransformerTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxSwift
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class EndpointToURLRequestTransformerTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    let disposeBag = DisposeBag()
+   14|       |
+   15|      4|    override func setUp() {
+   16|      4|        super.setUp()
+   17|      4|    }
+   18|       |
+   19|      4|    override func tearDown() {
+   20|      4|        super.tearDown()
+   21|      4|    }
+   22|       |
+   23|      1|    func test_defaultInitializer() {
+   24|      1|
+   25|      1|        // Given
+   26|      1|        let expectation = XCTestExpectation(description: "event call")
+   27|      1|        let parameterMock = RepositoryParameterMock(testValue: "test")
+   28|      1|        var result: URLRequest?
+   29|      1|        let sut = AnyTransformer(base: EndpointToURLRequestTransformer())
+   30|      1|
+   31|      1|        // When
+   32|      1|        sut
+   33|      1|            .rx_transform(object: EndpointBaseMock.get(with: parameterMock))
+   34|      1|            .subscribe(onNext: { request in
+   35|      1|                result = request
+   36|      1|                expectation.fulfill()
+   37|      1|            })
+   38|      1|            .disposed(by: disposeBag)
+   39|      1|
+   40|      1|        //Then
+   41|      1|        XCTAssertNotNil(result)
+   42|      1|        XCTAssertEqual(result?.url?.absoluteString, "http://localhost:7000/default")
+   43|      1|
+   44|      1|        wait(for: [expectation], timeout: 5.0)
+   45|      1|
+   46|      1|    }
+   47|       |
+   48|      1|    func test_BodyAndQueryDataInjectionInitializer() {
+   49|      1|        // Given
+   50|      1|        let expectation = XCTestExpectation(description: "event call")
+   51|      1|        let sut = AnyTransformer(base: EndpointToURLRequestTransformer())
+   52|      1|        var result: URLRequest?
+   53|      1|
+   54|      1|        // When
+   55|      1|        sut
+   56|      1|            .rx_transform(object: EndPointFullDataMock.post(with: RespositoryParameterFullDataMock()))
+   57|      1|            .subscribe(onNext: { request in
+   58|      1|                result = request
+   59|      1|                expectation.fulfill()
+   60|      1|            })
+   61|      1|            .disposed(by: disposeBag)
+   62|      1|
+   63|      1|        XCTAssertNotNil(result)
+   64|      1|
+   65|      1|        wait(for: [expectation], timeout: 5.0)
+   66|      1|    }
+   67|       |
+   68|      1|    func test_wrongEndpointInjectionIntializer() {
+   69|      1|        // Given
+   70|      1|        let expectation = XCTestExpectation(description: "event call")
+   71|      1|        let sut = AnyTransformer(base: EndpointToURLRequestTransformer())
+   72|      1|
+   73|      1|        // When
+   74|      1|        sut
+   75|      1|            .rx_transform(object: EndpointFailMock.get)
+   76|      1|            .subscribe(onError: { error in
+   77|      1|                XCTAssertNotNil(error)
+   78|      1|                expectation.fulfill()
+   79|      1|            })
+   80|      1|            .disposed(by: disposeBag)
+   81|      1|
+   82|      1|        // Then
+   83|      1|        wait(for: [expectation], timeout: 5.0)
+   84|      1|    }
+   85|       |
+   86|      1|    func test_EndpointFailMock2InjectionIntializer() {
+   87|      1|        // Given
+   88|      1|        let expectation = XCTestExpectation(description: "event call")
+   89|      1|        let sut = AnyTransformer(base: EndpointToURLRequestTransformer())
+   90|      1|
+   91|      1|        // When
+   92|      1|        sut
+   93|      1|            .rx_transform(object: EndpointFailMock2.get)
+   94|      1|            .subscribe(onError: { error in
+   95|      1|                XCTAssertNotNil(error)
+   96|      1|                expectation.fulfill()
+   97|      1|            })
+   98|      1|            .disposed(by: disposeBag)
+   99|      1|
+  100|      1|        // Then
+  101|      1|        wait(for: [expectation], timeout: 5.0)
+  102|      1|    }
+  103|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Transformer/Implementation/Mock/DictionaryToUserTransformerMock.swift:
+    1|       |//
+    2|       |//  DictionaryToUserTransformerMock.swift
+    3|       |//  RxVipKitTests
+    4|       |//
+    5|       |//  Created by SANGBONG MOON on 23/01/2019.
+    6|       |//  Copyright © 2019 Scott Moon. All rights reserved.
+    7|       |//
+    8|       |
+    9|       |import Foundation
+   10|       |
+   11|       |@testable import RxVipKit
+   12|       |
+   13|       |struct DictionaryToTestModelTransformerMock {
+   14|       |}
+   15|       |
+   16|       |// MARK: Transformer
+   17|       |
+   18|       |extension DictionaryToTestModelTransformerMock: Transformer {
+   19|      3|    func transform(object: [String: String]) throws -> TestEntityMock {
+   20|      3|        guard
+   21|      3|            let name = object["name"],
+   22|      3|            let surname = object["surname"],
+   23|      3|            let age = object["age"]
+   24|      3|            else {
+   25|      1|                throw DefaultAppError(messageKey: "error.global")
+   26|      2|        }
+   27|      2|
+   28|      2|        return TestEntityMock(name: name, surname: surname, age: age)
+   29|      3|    }
+   30|       |
+   31|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Transformer/Transformer+RxTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxBlocking
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class TransformerRxTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    var sut: AnyTransformer<[String: String], TestEntityMock>!
+   14|       |    let expectedTestMock = TestEntityMock(name: "test name", surname: "test surname", age: "34")
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_initializer() {
+   25|      1|
+   26|      1|        let succeedDictionary = ["name": expectedTestMock.name, "surname": expectedTestMock.surname, "age": expectedTestMock.age]
+   27|      1|
+   28|      1|        let failedinjectedDictionary = ["name": expectedTestMock.name, "surname": expectedTestMock.surname]
+   29|      1|
+   30|      1|        // Given
+   31|      1|        sut = AnyTransformer(base: DictionaryToTestModelTransformerMock())
+   32|      1|
+   33|      1|        // When
+   34|      1|        var successResult: TestEntityMock?
+   35|      1|        do {
+   36|      1|            successResult = try sut.rx_transform(object: succeedDictionary).toBlocking().first()
+   37|      1|        } catch {
+   38|      0|
+   39|      0|            XCTFail(error.localizedDescription)
+   40|      1|        }
+   41|      1|
+   42|      1|        var failedResult: TestEntityMock?
+   43|      1|        do {
+   44|      1|            failedResult = try sut.rx_transform(object: failedinjectedDictionary).toBlocking().first()
+   45|      1|        } catch {
+   46|      1|            XCTAssertNotNil(error)
+   47|      1|        }
+   48|      0|
+   49|      0|        //Then
+   50|      1|        XCTAssertEqual(expectedTestMock, successResult)
+   51|      1|        XCTAssertNil(failedResult)
+   52|      0|    }
+   53|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Translator/NSLocalizedTranslatorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |@testable import RxVipKit
+    8|       |
+    9|       |class NSLocalizedTranslatorTests: XCTestCase {
+   10|       |
+   11|       |    // MARK: - Subject under test
+   12|       |
+   13|       |    var sut: NSLocalizedTranslator!
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_initializer() {
+   24|      1|        // Given
+   25|      1|        let expected = "test.global"
+   26|      1|
+   27|      1|        // When
+   28|      1|        sut = NSLocalizedTranslator()
+   29|      1|        let action = sut.translation(for: "test.global")
+   30|      1|
+   31|      1|        //Then
+   32|      1|        XCTAssertEqual(expected, action)
+   33|      1|    }
+   34|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Utils/InMemory/AppInMemoryTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |import RxBlocking
+    8|       |
+    9|       |@testable import RxVipKit
+   10|       |
+   11|       |class AppInMemoryTests: XCTestCase {
+   12|       |
+   13|       |    // MARK: - Subject under test
+   14|       |    var sut: AppInMemory<[String: String]>!
+   15|       |
+   16|      1|    override func setUp() {
+   17|      1|        super.setUp()
+   18|      1|    }
+   19|       |
+   20|      1|    override func tearDown() {
+   21|      1|        super.tearDown()
+   22|      1|    }
+   23|       |
+   24|      1|    func test_init() {
+   25|      1|        // Given
+   26|      1|        sut = AppInMemory(defaultValue: [String: String]())
+   27|      1|
+   28|      1|        // When
+   29|      1|        var initValue: [String: String]?
+   30|      1|        var updateResult: [String: String]?
+   31|      1|        var getValue: [String: String]?
+   32|      1|        do {
+   33|      1|            initValue = try sut.rxValue.toBlocking().first()
+   34|      1|            updateResult = try sut.update(with: ["test": "update"]).toBlocking().first()
+   35|      1|            getValue = try sut.rxValue.toBlocking().first()
+   36|      1|        } catch {
+   37|      0|            XCTAssertNil(error)
+   38|      1|        }
+   39|      1|
+   40|      1|        // Then
+   41|      1|        XCTAssertEqual([:], initValue)
+   42|      1|        XCTAssertNotNil(updateResult)
+   43|      1|        XCTAssertNotNil(getValue)
+   44|      1|
+   45|      1|    }
+   46|       |
+   47|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Utils/Validator/IntValidatorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class IntValidatorTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    var sut: AnyValidator<String, DefaultAppError>!
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_init() {
+   24|      1|        // Given
+   25|      1|        let intValidator = IntValueValidator()
+   26|      1|
+   27|      1|        sut = AnyValidator<String, DefaultAppError>(base: intValidator)
+   28|      1|
+   29|      1|        // When
+   30|      1|        let emptyValueError = sut.validate(object: "")
+   31|      1|        let intConvertError = sut.validate(object: "12")
+   32|      1|        let invalidTypeError = sut.validate(object: "two")
+   33|      1|
+   34|      1|        // Then
+   35|      1|        XCTAssertNil(emptyValueError)
+   36|      1|        XCTAssertNil(intConvertError)
+   37|      1|        XCTAssertNotNil(invalidTypeError)
+   38|      1|    }
+   39|       |
+   40|       |}
+
+/Users/sangbongmoon/Desktop/RxVipKit/RxVipKitTests/Foundation/Utils/Validator/TextFiledValueValidatorTests.swift:
+    1|       |//
+    2|       |// Created by SANGBONG MOON on 2019-01-20.
+    3|       |// Copyright (c) 2019 Scott Moon. All rights reserved.
+    4|       |//
+    5|       |
+    6|       |import XCTest
+    7|       |
+    8|       |@testable import RxVipKit
+    9|       |
+   10|       |class TextFiledValueValidatorTests: XCTestCase {
+   11|       |
+   12|       |    // MARK: - Subject under test
+   13|       |    var sut: AnyValidator<String, DefaultAppError>!
+   14|       |
+   15|      1|    override func setUp() {
+   16|      1|        super.setUp()
+   17|      1|    }
+   18|       |
+   19|      1|    override func tearDown() {
+   20|      1|        super.tearDown()
+   21|      1|    }
+   22|       |
+   23|      1|    func test_init() {
+   24|      1|        // Given
+   25|      1|        let textFieldValidator = TextFieldValueValidator(minCharator: 0, maxCharator: 5)
+   26|      1|
+   27|      1|        sut = AnyValidator<String, DefaultAppError>(base: textFieldValidator)
+   28|      1|
+   29|      1|        // When
+   30|      1|        let minValueError = sut.validate(object: "")
+   31|      1|        let maxValueError = sut.validate(object: "123456")
+   32|      1|        let correct = sut.validate(object: "1234")
+   33|      1|
+   34|      1|        // Then
+   35|      1|        XCTAssertNotNil(minValueError)
+   36|      1|        XCTAssertNotNil(maxValueError)
+   37|      1|        XCTAssertNil(correct)
+   38|      1|    }
+   39|       |
+   40|       |}
+

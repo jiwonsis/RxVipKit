@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct NetworkAppError {
+public struct NetworkAppError {
     private let error: Error?
 
     private enum Constant {
@@ -15,7 +15,7 @@ struct NetworkAppError {
 
     // MARK: Intializer
 
-    init(error: Error?) {
+    public init(error: Error?) {
         self.error = error
     }
 

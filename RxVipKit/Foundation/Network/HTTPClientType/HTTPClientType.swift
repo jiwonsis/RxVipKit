@@ -8,7 +8,7 @@
 
 import RxSwift
 
-protocol HTTPClientType {
+public protocol HTTPClientType {
     func request<T: Deserializable>(endpoint: Endpoint) -> Observable<Result<T>>
     func request(endpoint: Endpoint) -> Observable<Response>
 }

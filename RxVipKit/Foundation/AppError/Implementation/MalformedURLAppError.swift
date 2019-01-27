@@ -6,11 +6,13 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct MalformedURLAppError {
+public struct MalformedURLAppError {
 
     private enum Constant {
         static let translationKey = "error.global"
     }
+
+    public init() {}
 
 }
 

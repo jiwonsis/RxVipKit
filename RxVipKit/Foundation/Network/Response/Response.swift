@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Response {
+public protocol Response {
     var succeed: Bool { get }
     var data: Data? { get }
     var error: Error? { get }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum EventResponseCode {
+public enum EventResponseCode {
     case processing
     case ok // swiftlint:disable:this identifier_name
     case noContent

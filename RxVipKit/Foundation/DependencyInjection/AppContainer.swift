@@ -8,7 +8,7 @@
 
 import Swinject
 
-protocol AppContainer {
+public protocol AppContainer {
     func getChild() -> Container
     func resolve<Service>(serviceType: Service.Type) -> Service?
     func resolve<Service>(serviceType: Service.Type, name: String) -> Service?

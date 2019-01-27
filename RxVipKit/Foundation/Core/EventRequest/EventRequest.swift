@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EventRequest {
+public struct EventRequest {
     private let _path: String?
     private let _parameters: [String: String]?
     private let _data: [String: Any]?

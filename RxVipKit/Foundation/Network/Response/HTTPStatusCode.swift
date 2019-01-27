@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum HTTPStatusCode: Int {
+public enum HTTPStatusCode: Int {
     case ok = 200 // swiftlint:disable:this identifier_name
     case created = 201
     case noContent = 204

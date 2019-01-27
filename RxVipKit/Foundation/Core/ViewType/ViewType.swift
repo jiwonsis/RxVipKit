@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-protocol ViewType {
+public protocol ViewType {
     associatedtype ViewModel
 
     var view: UIView { get }

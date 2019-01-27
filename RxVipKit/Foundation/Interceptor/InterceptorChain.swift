@@ -5,7 +5,7 @@
 
 import RxSwift
 
-final class InterceptorChain<T> {
+public final class InterceptorChain<T> {
     private var _interceptors: [AnyInterceptor<T>]
 
     public var input: T?

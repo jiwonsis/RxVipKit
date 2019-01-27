@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-enum EventParameterKey {
+public enum EventParameterKey {
     static let value = "value"
     static let viewState = "view_state"
     static let objectValidated = "object_validated"

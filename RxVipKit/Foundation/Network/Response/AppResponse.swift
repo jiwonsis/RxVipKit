@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AppResponse {
+public struct AppResponse {
     private let _request: URLRequest
     private let _data: Data?
     private let httpResponse: URLResponse?
@@ -16,7 +16,7 @@ struct AppResponse {
 
     // MARK: Initializer
 
-    init(request: URLRequest, data: Data?, httpResponse: URLResponse?, error: Error?) {
+    public init(request: URLRequest, data: Data?, httpResponse: URLResponse?, error: Error?) {
         _request = request
         _data = data
         _error = error
@@ -28,33 +28,33 @@ struct AppResponse {
 
 extension AppResponse: Response {
 
-    var succeed: Bool {
+    public var succeed: Bool {
         guard let httpResponse = httpResponse as? HTTPURLResponse else {
             return false
         }
         return httpResponse.statusCode >= HTTPStatusCode.ok.rawValue && httpResponse.statusCode < HTTPStatusCode.badRequest.rawValue
     }
 
-    var data: Data? {
+    public var data: Data? {
         return _data
     }
 
-    var error: Error? {
+    public var error: Error? {
         return _error
     }
 
-    var statusCode: HTTPStatusCode? {
+    public var statusCode: HTTPStatusCode? {
         guard let httpResponse = httpResponse as? HTTPURLResponse else {
             return nil
         }
         return HTTPStatusCode(rawValue: httpResponse.statusCode)
     }
 
-    var request: URLRequest {
+    public var request: URLRequest {
         return _request
     }
 
-    var headers: [String: Any]? {
+    public var headers: [String: Any]? {
         guard let httpResponse = httpResponse as? HTTPURLResponse else {
             return nil
         }

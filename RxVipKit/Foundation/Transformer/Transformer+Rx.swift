@@ -8,7 +8,7 @@
 
 import RxSwift
 
-extension Transformer {
+public extension Transformer {
     func rx_transform(object: Input) -> Observable<Output> {
         return Observable.create { (observer) -> Disposable in
             do {

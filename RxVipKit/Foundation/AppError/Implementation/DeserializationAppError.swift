@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct DeserializationAppError {
+public struct DeserializationAppError {
 
     private let developerMessage: String
 

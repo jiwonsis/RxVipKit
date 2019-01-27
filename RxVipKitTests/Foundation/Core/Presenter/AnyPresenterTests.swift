@@ -23,7 +23,7 @@ class AnyPresenterTests: XCTestCase {
 
     func test_init() {
         // Given
-        let testPresenterMock = TestPresenterMock(translator: NSLocalizedTranslator(), logger: AppLogger())
+        let testPresenterMock = TestPresenterMock(translator: NSLocalizedStringTranslator(), logger: AppLogger())
 
         sut = AnyPresenter<TestViewModelMock>(base: testPresenterMock)
 

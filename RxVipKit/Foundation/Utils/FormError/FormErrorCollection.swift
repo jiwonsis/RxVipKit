@@ -6,6 +6,6 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct FormErrorCollection {
+public struct FormErrorCollection {
     let errors: [FormError]
 }

@@ -8,6 +8,6 @@
 
 import RxSwift
 
-protocol Interactor {
+public protocol Interactor {
     func handle(request: EventRequest) -> Observable<EventRequest>
 }

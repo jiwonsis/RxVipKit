@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-struct TextFieldValueValidator {
+public struct TextFieldValueValidator {
     private let minCharator: Int
     private let maxCharator: Int
 
@@ -15,7 +15,7 @@ struct TextFieldValueValidator {
     }
 
     // MARK: Initializer
-    init(minCharator: Int, maxCharator: Int) {
+    public init(minCharator: Int, maxCharator: Int) {
         self.minCharator = minCharator
         self.maxCharator = maxCharator
     }
@@ -23,7 +23,7 @@ struct TextFieldValueValidator {
 
 extension TextFieldValueValidator: Validator {
 
-    func validate(object: String) -> DefaultAppError? {
+    public func validate(object: String) -> DefaultAppError? {
         if object.count > minCharator && object.count < maxCharator {
             return nil
         }

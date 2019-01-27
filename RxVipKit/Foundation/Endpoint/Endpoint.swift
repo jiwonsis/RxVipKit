@@ -6,7 +6,7 @@
 //  Copyright © 2019 Scott Moon. All rights reserved.
 //
 
-protocol Endpoint {
+public protocol Endpoint {
     var baseURL: String { get }
     var path: String { get }
     var httpMethod: HTTPMethod { get }
