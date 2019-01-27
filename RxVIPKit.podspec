@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name          = 'RxVIPKit'
-    s.version       = '0.1.0'
+    s.version       = '0.1.1'
     s.summary       = 'Vip Architecture with RxSwift helper tools'
     s.homepage      = 'https://github.com/jiwonsis/RxVipKit'
     s.summary       = 'Vip Architecture with RxSwift helper tools'  
